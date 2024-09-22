@@ -7,7 +7,7 @@ namespace тема2
     {
         public MainWindow()
         {
-            InitializeComponent();
+            InitializeComponent();      //test   
         }
 
         private void button1_Click(object sender, EventArgs e)
