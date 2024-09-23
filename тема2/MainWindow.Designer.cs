@@ -124,6 +124,7 @@ namespace тема2
             buttTest3.TabIndex = 4;
             buttTest3.Text = "Адаптация сотрудников";
             buttTest3.UseVisualStyleBackColor = false;
+            buttTest3.Click += buttTest3_Click;
             // 
             // buttTest7
             // 

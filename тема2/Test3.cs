@@ -134,6 +134,9 @@ namespace тема_1
             }
             if (num == 10)
                 ShowAnswer(points);
+            radioButton1.Checked = false;
+            radioButton2.Checked = false;
+            radioButton3.Checked = false;
             n++;
         }
 

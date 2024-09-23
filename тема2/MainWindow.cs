@@ -7,7 +7,7 @@ namespace тема2
     {
         public MainWindow()
         {
-            InitializeComponent(); 
+            InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -22,6 +22,13 @@ namespace тема2
             this.Hide();
             Topic2Test1 topic2 = new Topic2Test1();
             topic2.Show();
+        }
+
+        private void buttTest3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Topic3Test1 topic3 = new Topic3Test1();
+            topic3.Show();
         }
     }
 }
