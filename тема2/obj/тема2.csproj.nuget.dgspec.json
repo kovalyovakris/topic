@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\вуз\\пуирчр\\тема2\\тема2.csproj": {}
+    "C:\\Users\\HP\\Source\\Repos\\NewRepo\\тема2\\тема2.csproj": {}
   },
   "projects": {
-    "D:\\вуз\\пуирчр\\тема2\\тема2.csproj": {
+    "C:\\Users\\HP\\Source\\Repos\\NewRepo\\тема2\\тема2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\вуз\\пуирчр\\тема2\\тема2.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\Source\\Repos\\NewRepo\\тема2\\тема2.csproj",
         "projectName": "тема2",
-        "projectPath": "D:\\вуз\\пуирчр\\тема2\\тема2.csproj",
+        "projectPath": "C:\\Users\\HP\\Source\\Repos\\NewRepo\\тема2\\тема2.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "D:\\вуз\\пуирчр\\тема2\\obj\\",
+        "outputPath": "C:\\Users\\HP\\Source\\Repos\\NewRepo\\тема2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",

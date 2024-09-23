@@ -53,6 +53,7 @@
             label4.Size = new Size(156, 40);
             label4.TabIndex = 17;
             label4.Text = "Вернуться в главное \r\nменю";
+            label4.Click += this.label4_Click;
             // 
             // pictureBox1
             // 
@@ -102,6 +103,7 @@
             groupBox1.Size = new Size(699, 230);
             groupBox1.TabIndex = 13;
             groupBox1.TabStop = false;
+            groupBox1.Enter += this.groupBox1_Enter;
             // 
             // radioButton3
             // 
@@ -149,6 +151,7 @@
             label3.Size = new Size(184, 25);
             label3.TabIndex = 12;
             label3.Text = "Что такое Agile?";
+            label3.Click += this.label3_Click;
             // 
             // button1
             // 
@@ -171,6 +174,7 @@
             label2.Size = new Size(102, 22);
             label2.TabIndex = 10;
             label2.Text = "Тест 1 из 3";
+            label2.Click += this.label2_Click;
             // 
             // label1
             // 
@@ -181,6 +185,7 @@
             label1.Size = new Size(699, 34);
             label1.TabIndex = 9;
             label1.Text = "Отбор персонала. Тест на отбор персонала в IT-сфере";
+            label1.Click += label1_Click;
             // 
             // Topic2Test1
             // 

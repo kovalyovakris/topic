@@ -89,22 +89,22 @@ namespace тема2
             label2.Hide();
             groupBox1.Hide();
             button2.Hide();
-            if (points <=5)
+            if (points <= 5)
             {
                 label3.Text = $"Ваш результат: {points} баллов\n\n" +
                 "Вам необходимы базовые знания и навыки в IT-сфере.";
             }
-            else if (points>=6 && points <=12)
+            else if (points >= 6 && points <= 12)
             {
                 label3.Text = $"Ваш результат: {points} баллов\n\n" +
-                "Имеются частичные знания,\n"+"но требуется больше практики и обучения.\n";
+                "Имеются частичные знания,\n" + "но требуется больше практики и обучения.\n";
             }
-            else if(points >=13 && points <=16)
+            else if (points >= 13 && points <= 16)
             {
                 label3.Text = $"Ваш результат: {points} баллов\n\n" +
-                "Достаточные знания для старта,\n"+"можно развивать навыки в конкретной области.";
+                "Достаточные знания для старта,\n" + "можно развивать навыки в конкретной области.";
             }
-            else if(17<=points&& points<=20)
+            else if (17 <= points && points <= 20)
             {
                 label3.Text = $"Ваш результат: {points} баллов\n\n" +
                     "Отличный результат, подходите для работы в IT-сфере!";
@@ -162,6 +162,10 @@ namespace тема2
             MainWindow main = new MainWindow();
             main.Show();
         }
-        
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
