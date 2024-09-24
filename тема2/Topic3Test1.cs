@@ -154,7 +154,7 @@ namespace тема2
         private void button3_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Topic2Test2 test2 = new Topic2Test2();
+            Topic3Test2 test2 = new Topic3Test2();
             test2.Show();
         }
 

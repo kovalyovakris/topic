@@ -94,9 +94,9 @@
             groupBox1.Controls.Add(radioButton3);
             groupBox1.Controls.Add(radioButton2);
             groupBox1.Controls.Add(radioButton1);
-            groupBox1.Location = new Point(276, 255);
+            groupBox1.Location = new Point(204, 227);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(521, 226);
+            groupBox1.Size = new Size(695, 226);
             groupBox1.TabIndex = 15;
             groupBox1.TabStop = false;
             // 
@@ -140,7 +140,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Times New Roman", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            label3.Location = new Point(215, 167);
+            label3.Location = new Point(204, 158);
             label3.Name = "label3";
             label3.Size = new Size(664, 25);
             label3.TabIndex = 14;

@@ -144,7 +144,7 @@
             label3.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             label3.AutoSize = true;
             label3.Font = new Font("Times New Roman", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            label3.Location = new Point(176, 209);
+            label3.Location = new Point(176, 183);
             label3.Name = "label3";
             label3.Size = new Size(184, 25);
             label3.TabIndex = 21;
