@@ -94,9 +94,9 @@
             groupBox1.Controls.Add(radioButton3);
             groupBox1.Controls.Add(radioButton2);
             groupBox1.Controls.Add(radioButton1);
-            groupBox1.Location = new Point(204, 227);
+            groupBox1.Location = new Point(173, 227);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(695, 226);
+            groupBox1.Size = new Size(785, 226);
             groupBox1.TabIndex = 15;
             groupBox1.TabStop = false;
             // 
@@ -116,7 +116,7 @@
             // 
             radioButton2.AutoSize = true;
             radioButton2.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            radioButton2.Location = new Point(28, 87);
+            radioButton2.Location = new Point(28, 93);
             radioButton2.Name = "radioButton2";
             radioButton2.Size = new Size(68, 32);
             radioButton2.TabIndex = 1;
@@ -140,7 +140,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Times New Roman", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            label3.Location = new Point(204, 158);
+            label3.Location = new Point(173, 159);
             label3.Name = "label3";
             label3.Size = new Size(664, 25);
             label3.TabIndex = 14;
