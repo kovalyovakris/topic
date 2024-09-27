@@ -31,5 +31,26 @@
     <Compile Update="Topic3Test3.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Topic4Test1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Topic4Test2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Topic4Test3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Topic5Test1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Topic5Test2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Topic5Test3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Topic6Test1.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

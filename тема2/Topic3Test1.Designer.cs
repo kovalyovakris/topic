@@ -181,6 +181,7 @@
             label1.Size = new Size(455, 34);
             label1.TabIndex = 18;
             label1.Text = "Адаптация сотрудников в IT-сфере";
+            label1.Click += label1_Click;
             // 
             // Topic3Test1
             // 

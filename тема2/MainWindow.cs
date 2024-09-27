@@ -30,5 +30,19 @@ namespace тема2
             Topic3Test1 topic3 = new Topic3Test1();
             topic3.Show();
         }
+
+        private void buttTest4_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Topic4Test1 topic4 = new Topic4Test1();
+            topic4.Show();
+        }
+
+        private void buttText5_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Topic5Test1 topic5 = new Topic5Test1(); 
+            topic5.Show();
+        }
     }
 }
