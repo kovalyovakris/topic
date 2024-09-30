@@ -137,6 +137,7 @@ namespace тема2
             buttTest7.TabIndex = 5;
             buttTest7.Text = "Создание эффективной команды";
             buttTest7.UseVisualStyleBackColor = false;
+            buttTest7.Click += buttTest7_Click;
             // 
             // buttTest6
             // 
@@ -147,6 +148,7 @@ namespace тема2
             buttTest6.TabIndex = 6;
             buttTest6.Text = "Управление проблемными сотрудниками";
             buttTest6.UseVisualStyleBackColor = false;
+            buttTest6.Click += buttTest6_Click;
             // 
             // MainWindow
             // 

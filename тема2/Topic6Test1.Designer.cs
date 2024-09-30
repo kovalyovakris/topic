@@ -65,6 +65,7 @@
             pictureBox1.Size = new Size(39, 40);
             pictureBox1.TabIndex = 52;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // button3
             // 
@@ -76,6 +77,7 @@
             button3.TabIndex = 51;
             button3.Text = "Перейти к тесту 2";
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // button2
             // 
@@ -87,6 +89,7 @@
             button2.TabIndex = 50;
             button2.Text = "Следующий вопрос";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // groupBox1
             // 

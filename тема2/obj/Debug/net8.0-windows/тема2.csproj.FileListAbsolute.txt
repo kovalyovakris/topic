@@ -82,3 +82,9 @@ C:\Users\HP\source\repos\NewRepo\тема2\obj\Debug\net8.0-windows\тема2.To
 C:\Users\HP\source\repos\NewRepo\тема2\obj\Debug\net8.0-windows\тема2.Topic5Test1.resources
 C:\Users\HP\source\repos\NewRepo\тема2\obj\Debug\net8.0-windows\тема2.Topic5Test2.resources
 C:\Users\HP\source\repos\NewRepo\тема2\obj\Debug\net8.0-windows\тема2.Topic5Test3.resources
+C:\Users\HP\Source\Repos\NewRepo\тема2\obj\Debug\net8.0-windows\тема2.Topic6Test1.resources
+C:\Users\HP\source\repos\NewRepo\тема2\obj\Debug\net8.0-windows\тема2.Topic6Test2.resources
+C:\Users\HP\source\repos\NewRepo\тема2\obj\Debug\net8.0-windows\тема2.Topic6Test3.resources
+C:\Users\HP\source\repos\NewRepo\тема2\obj\Debug\net8.0-windows\тема2.Topic7Test1.resources
+C:\Users\HP\source\repos\NewRepo\тема2\obj\Debug\net8.0-windows\тема2.Topic7Test2.resources
+C:\Users\HP\source\repos\NewRepo\тема2\obj\Debug\net8.0-windows\тема2.Topic7Test3.resources
