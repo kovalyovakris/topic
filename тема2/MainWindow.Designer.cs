@@ -21,7 +21,9 @@ namespace тема2
             }
             base.Dispose(disposing);
         }
-        public class RoundButton : Button
+
+
+		public class RoundButton : Button
         {
             GraphicsPath GetRoundPath(RectangleF Rect, int radius)
             {
@@ -46,7 +48,7 @@ namespace тема2
             {
                 base.OnPaint(e);
                 RectangleF Rect = new RectangleF(0, 0, this.Width, this.Height);
-                GraphicsPath GraphPath = GetRoundPath(Rect, 50);
+                GraphicsPath GraphPath = GetRoundPath(Rect, 60);
 
                 this.Region = new Region(GraphPath);
                 using (Pen pen = new Pen(Color.White, 2.95f))
