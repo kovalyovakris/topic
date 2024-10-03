@@ -17,7 +17,7 @@ namespace тема_1
 		private int n = 0;
 		private int points = 0;
 		private String[] questions = new string[10] {
-				"Как Вы обычно реагируете на задачи, требующие\n"+"делегирования?",
+				"Как Вы обычно реагируете на задачи, требующие делегирования?",
 				"Как Вы принимаете решения в вашей работе?",
 				"Как Вы относитесь к идеи, что ваши подчинённые могут\n"+"важные задачи?",
 				"Как Вы реагируете, если ваши решения вызывают критику?",
@@ -53,7 +53,7 @@ namespace тема_1
 		};
 		private String[] answer3 = new string[10] {
 			"Делаю, если доверяю кому-то",
-			"Применяю систематический подход, включая анализ данных",
+			"Применяю систематический подход и анализ данных",
 			"Доверяю, но остаюсь на связи",
 			"Слушаю критику и готов обсудить  ",
 			"Проверяю регулярно, но без излишнего контроля ",
@@ -236,6 +236,16 @@ namespace тема_1
 		}
 
 		private void radioButton2_CheckedChanged(object sender, EventArgs e)
+		{
+
+		}
+
+		private void label3_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void radioButton3_CheckedChanged(object sender, EventArgs e)
 		{
 
 		}

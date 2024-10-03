@@ -36,13 +36,6 @@ namespace тема_1
 			Button1 = new Button();
 			label3 = new Label();
 			groupBox1 = new RoundedGroupBox();
-			radioButton4 = new RadioButton();
-			button2 = new RoundButton();
-			radioButton3 = new RadioButton();
-			radioButton2 = new RadioButton();
-			radioButton1 = new RadioButton();
-			button3 = new Button();
-			pictureBox1 = new PictureBox();
 			roundedPanel9 = new RoundedPanel();
 			roundedPanel8 = new RoundedPanel();
 			roundedPanel7 = new RoundedPanel();
@@ -53,6 +46,13 @@ namespace тема_1
 			roundedPanel2 = new RoundedPanel();
 			roundedPanel1 = new RoundedPanel();
 			roundedPanel10 = new RoundedPanel();
+			radioButton4 = new RadioButton();
+			button2 = new RoundButton();
+			radioButton3 = new RadioButton();
+			radioButton2 = new RadioButton();
+			radioButton1 = new RadioButton();
+			button3 = new Button();
+			pictureBox1 = new PictureBox();
 			groupBox1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
 			SuspendLayout();
@@ -93,9 +93,11 @@ namespace тема_1
 			label3.Size = new Size(973, 42);
 			label3.TabIndex = 4;
 			label3.Text = "Продолжаете ли Вы работать после окончания рабочего дня?";
+			label3.Click += label3_Click;
 			// 
 			// groupBox1
 			// 
+			groupBox1.Controls.Add(radioButton2);
 			groupBox1.Controls.Add(roundedPanel9);
 			groupBox1.Controls.Add(roundedPanel8);
 			groupBox1.Controls.Add(roundedPanel7);
@@ -110,7 +112,6 @@ namespace тема_1
 			groupBox1.Controls.Add(radioButton4);
 			groupBox1.Controls.Add(button2);
 			groupBox1.Controls.Add(radioButton3);
-			groupBox1.Controls.Add(radioButton2);
 			groupBox1.Controls.Add(radioButton1);
 			groupBox1.CornerRadius = 60;
 			groupBox1.Location = new Point(300, 163);
@@ -120,109 +121,6 @@ namespace тема_1
 			groupBox1.Size = new Size(1160, 647);
 			groupBox1.TabIndex = 5;
 			groupBox1.TabStop = false;
-			// 
-			// radioButton4
-			// 
-			radioButton4.AutoSize = true;
-			radioButton4.BackColor = Color.Transparent;
-			radioButton4.Font = new Font("Times New Roman", 16.125F);
-			radioButton4.ForeColor = Color.FromArgb(64, 64, 64);
-			radioButton4.Location = new Point(47, 392);
-			radioButton4.Margin = new Padding(5);
-			radioButton4.Name = "radioButton4";
-			radioButton4.Size = new Size(121, 53);
-			radioButton4.TabIndex = 3;
-			radioButton4.TabStop = true;
-			radioButton4.Text = "Нет";
-			radioButton4.UseVisualStyleBackColor = false;
-			// 
-			// button2
-			// 
-			button2.BackColor = Color.YellowGreen;
-			button2.Font = new Font("Times New Roman", 13.875F);
-			button2.ForeColor = Color.FromArgb(64, 64, 64);
-			button2.Location = new Point(758, 493);
-			button2.Margin = new Padding(5);
-			button2.Name = "button2";
-			button2.Size = new Size(336, 98);
-			button2.TabIndex = 6;
-			button2.Text = "Вперед";
-			button2.UseVisualStyleBackColor = false;
-			button2.Click += button2_Click;
-			// 
-			// radioButton3
-			// 
-			radioButton3.AutoSize = true;
-			radioButton3.BackColor = Color.Transparent;
-			radioButton3.Font = new Font("Times New Roman", 16.125F);
-			radioButton3.ForeColor = Color.FromArgb(64, 64, 64);
-			radioButton3.Location = new Point(47, 331);
-			radioButton3.Margin = new Padding(5);
-			radioButton3.Name = "radioButton3";
-			radioButton3.Size = new Size(121, 53);
-			radioButton3.TabIndex = 2;
-			radioButton3.TabStop = true;
-			radioButton3.Text = "Нет";
-			radioButton3.UseVisualStyleBackColor = false;
-			// 
-			// radioButton2
-			// 
-			radioButton2.AutoSize = true;
-			radioButton2.BackColor = Color.Transparent;
-			radioButton2.Font = new Font("Times New Roman", 16.125F);
-			radioButton2.ForeColor = Color.FromArgb(64, 64, 64);
-			radioButton2.Location = new Point(47, 270);
-			radioButton2.Margin = new Padding(5);
-			radioButton2.Name = "radioButton2";
-			radioButton2.Size = new Size(121, 53);
-			radioButton2.TabIndex = 1;
-			radioButton2.TabStop = true;
-			radioButton2.Text = "Нет";
-			radioButton2.UseVisualStyleBackColor = false;
-			radioButton2.CheckedChanged += radioButton2_CheckedChanged;
-			// 
-			// radioButton1
-			// 
-			radioButton1.AutoSize = true;
-			radioButton1.BackColor = Color.Transparent;
-			radioButton1.Font = new Font("Times New Roman", 16.125F);
-			radioButton1.ForeColor = Color.FromArgb(64, 64, 64);
-			radioButton1.Location = new Point(47, 210);
-			radioButton1.Margin = new Padding(5);
-			radioButton1.Name = "radioButton1";
-			radioButton1.Size = new Size(101, 53);
-			radioButton1.TabIndex = 0;
-			radioButton1.TabStop = true;
-			radioButton1.Text = "Да";
-			radioButton1.UseVisualStyleBackColor = false;
-			// 
-			// button3
-			// 
-			button3.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
-			button3.Location = new Point(730, 851);
-			button3.Margin = new Padding(5);
-			button3.Name = "button3";
-			button3.Size = new Size(322, 74);
-			button3.TabIndex = 7;
-			button3.Text = "Перейти к тесту 3";
-			button3.UseVisualStyleBackColor = true;
-			button3.Click += button3_Click;
-			// 
-			// pictureBox1
-			// 
-			pictureBox1.BackColor = Color.Transparent;
-			pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
-			pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
-			pictureBox1.ErrorImage = (Image)resources.GetObject("pictureBox1.ErrorImage");
-			pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-			pictureBox1.InitialImage = (Image)resources.GetObject("pictureBox1.InitialImage");
-			pictureBox1.Location = new Point(21, 24);
-			pictureBox1.Margin = new Padding(5);
-			pictureBox1.Name = "pictureBox1";
-			pictureBox1.Size = new Size(63, 64);
-			pictureBox1.TabIndex = 9;
-			pictureBox1.TabStop = false;
-			pictureBox1.Click += pictureBox1_Click;
 			// 
 			// roundedPanel9
 			// 
@@ -323,6 +221,110 @@ namespace тема_1
 			roundedPanel10.Name = "roundedPanel10";
 			roundedPanel10.Size = new Size(80, 20);
 			roundedPanel10.TabIndex = 16;
+			// 
+			// radioButton4
+			// 
+			radioButton4.AutoSize = true;
+			radioButton4.BackColor = Color.Transparent;
+			radioButton4.Font = new Font("Times New Roman", 13.875F);
+			radioButton4.ForeColor = Color.FromArgb(64, 64, 64);
+			radioButton4.Location = new Point(47, 390);
+			radioButton4.Margin = new Padding(5);
+			radioButton4.Name = "radioButton4";
+			radioButton4.Size = new Size(108, 46);
+			radioButton4.TabIndex = 3;
+			radioButton4.TabStop = true;
+			radioButton4.Text = "Нет";
+			radioButton4.UseVisualStyleBackColor = false;
+			// 
+			// button2
+			// 
+			button2.BackColor = Color.YellowGreen;
+			button2.Font = new Font("Times New Roman", 13.875F);
+			button2.ForeColor = Color.FromArgb(64, 64, 64);
+			button2.Location = new Point(758, 493);
+			button2.Margin = new Padding(5);
+			button2.Name = "button2";
+			button2.Size = new Size(336, 98);
+			button2.TabIndex = 6;
+			button2.Text = "Вперед";
+			button2.UseVisualStyleBackColor = false;
+			button2.Click += button2_Click;
+			// 
+			// radioButton3
+			// 
+			radioButton3.AutoSize = true;
+			radioButton3.BackColor = Color.Transparent;
+			radioButton3.Font = new Font("Times New Roman", 13.875F);
+			radioButton3.ForeColor = Color.FromArgb(64, 64, 64);
+			radioButton3.Location = new Point(47, 330);
+			radioButton3.Margin = new Padding(5);
+			radioButton3.Name = "radioButton3";
+			radioButton3.Size = new Size(108, 46);
+			radioButton3.TabIndex = 2;
+			radioButton3.TabStop = true;
+			radioButton3.Text = "Нет";
+			radioButton3.UseVisualStyleBackColor = false;
+			radioButton3.CheckedChanged += radioButton3_CheckedChanged;
+			// 
+			// radioButton2
+			// 
+			radioButton2.AutoSize = true;
+			radioButton2.BackColor = Color.Transparent;
+			radioButton2.Font = new Font("Times New Roman", 13.875F);
+			radioButton2.ForeColor = Color.FromArgb(64, 64, 64);
+			radioButton2.Location = new Point(47, 270);
+			radioButton2.Margin = new Padding(5);
+			radioButton2.Name = "radioButton2";
+			radioButton2.Size = new Size(108, 46);
+			radioButton2.TabIndex = 1;
+			radioButton2.TabStop = true;
+			radioButton2.Text = "Нет";
+			radioButton2.UseVisualStyleBackColor = false;
+			radioButton2.CheckedChanged += radioButton2_CheckedChanged;
+			// 
+			// radioButton1
+			// 
+			radioButton1.AutoSize = true;
+			radioButton1.BackColor = Color.Transparent;
+			radioButton1.Font = new Font("Times New Roman", 13.875F);
+			radioButton1.ForeColor = Color.FromArgb(64, 64, 64);
+			radioButton1.Location = new Point(47, 210);
+			radioButton1.Margin = new Padding(5);
+			radioButton1.Name = "radioButton1";
+			radioButton1.Size = new Size(90, 46);
+			radioButton1.TabIndex = 0;
+			radioButton1.TabStop = true;
+			radioButton1.Text = "Да";
+			radioButton1.UseVisualStyleBackColor = false;
+			// 
+			// button3
+			// 
+			button3.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
+			button3.Location = new Point(730, 851);
+			button3.Margin = new Padding(5);
+			button3.Name = "button3";
+			button3.Size = new Size(322, 74);
+			button3.TabIndex = 7;
+			button3.Text = "Перейти к тесту 3";
+			button3.UseVisualStyleBackColor = true;
+			button3.Click += button3_Click;
+			// 
+			// pictureBox1
+			// 
+			pictureBox1.BackColor = Color.Transparent;
+			pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
+			pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
+			pictureBox1.ErrorImage = (Image)resources.GetObject("pictureBox1.ErrorImage");
+			pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+			pictureBox1.InitialImage = (Image)resources.GetObject("pictureBox1.InitialImage");
+			pictureBox1.Location = new Point(21, 24);
+			pictureBox1.Margin = new Padding(5);
+			pictureBox1.Name = "pictureBox1";
+			pictureBox1.Size = new Size(63, 64);
+			pictureBox1.TabIndex = 9;
+			pictureBox1.TabStop = false;
+			pictureBox1.Click += pictureBox1_Click;
 			// 
 			// Test2
 			// 
