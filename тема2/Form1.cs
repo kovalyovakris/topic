@@ -62,7 +62,7 @@ namespace тема_1
 
 		private void button1_Click(object sender, EventArgs e)
 		{
-			label2.Text = (n + 1).ToString() + "/10";
+
 			button1.Hide();
 			label3.Visible = true;
 			label3.Text = questions[n];
@@ -72,7 +72,6 @@ namespace тема_1
 		}
 		private void ShowAnswer(int p)
 		{
-			label2.Hide();
 			groupBox1.Hide();
 			button2.Hide();
 			if (points < 6)
@@ -96,7 +95,7 @@ namespace тема_1
 		{
 			if (num < 10)
 			{
-				label2.Text = (n + 1).ToString() + "/10";
+
 				label3.Text = questions[n];
 				UpdatePanelColors();
 			}
@@ -165,5 +164,14 @@ namespace тема_1
 
 		}
 
+		private void label1_Click_2(object sender, EventArgs e)
+		{
+
+		}
+
+		private void radioButton1_CheckedChanged(object sender, EventArgs e)
+		{
+
+		}
 	}
 }

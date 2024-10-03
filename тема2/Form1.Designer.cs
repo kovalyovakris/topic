@@ -33,7 +33,6 @@ namespace тема_1
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
 			label1 = new Label();
-			label2 = new Label();
 			button1 = new Button();
 			label3 = new Label();
 			groupBox1 = new RoundedGroupBox();
@@ -68,18 +67,7 @@ namespace тема_1
 			label1.Size = new Size(809, 36);
 			label1.TabIndex = 0;
 			label1.Text = "Тест №1: делегирование полномочий и принятие решений";
-			// 
-			// label2
-			// 
-			label2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-			label2.AutoSize = true;
-			label2.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 204);
-			label2.Location = new Point(801, 189);
-			label2.Margin = new Padding(5, 0, 5, 0);
-			label2.Name = "label2";
-			label2.Size = new Size(162, 36);
-			label2.TabIndex = 1;
-			label2.Text = "Тест 1 из 3";
+			label1.Click += label1_Click_2;
 			// 
 			// button1
 			// 
@@ -223,7 +211,7 @@ namespace тема_1
 			roundedPanel1.Size = new Size(80, 20);
 			roundedPanel1.TabIndex = 7;
 			// 
-			// panel1
+			// roundedPanel10
 			// 
 			roundedPanel10.BackColor = Color.Silver;
 			roundedPanel10.CornerRadius = 20;
@@ -260,6 +248,7 @@ namespace тема_1
 			radioButton1.TabStop = true;
 			radioButton1.Text = "Да";
 			radioButton1.UseVisualStyleBackColor = true;
+			radioButton1.CheckedChanged += radioButton1_CheckedChanged;
 			// 
 			// button2
 			// 
@@ -315,7 +304,6 @@ namespace тема_1
 			Controls.Add(button3);
 			Controls.Add(groupBox1);
 			Controls.Add(button1);
-			Controls.Add(label2);
 			Controls.Add(label1);
 			DoubleBuffered = true;
 			Margin = new Padding(5);
@@ -430,7 +418,6 @@ namespace тема_1
 		}
 
 		private Label label1;
-        private Label label2;
         private Button button1;
         private Label label3;
         private RoundedGroupBox groupBox1;
