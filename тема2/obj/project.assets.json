@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HP\\source\\repos\\NewRepo\\тема2\\тема2.csproj",
+      "projectUniqueName": "C:\\Users\\HP\\Source\\Repos\\NewRepo\\тема2\\тема2.csproj",
       "projectName": "тема2",
-      "projectPath": "C:\\Users\\HP\\source\\repos\\NewRepo\\тема2\\тема2.csproj",
+      "projectPath": "C:\\Users\\HP\\Source\\Repos\\NewRepo\\тема2\\тема2.csproj",
       "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HP\\source\\repos\\NewRepo\\тема2\\obj\\",
+      "outputPath": "C:\\Users\\HP\\Source\\Repos\\NewRepo\\тема2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -73,5 +73,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Ошибка чтения файла кэша C:\\Users\\HP\\Source\\Repos\\NewRepo\\тема2\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

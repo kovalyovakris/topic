@@ -9,22 +9,25 @@ namespace тема_1
         private String[] questions = new string[10] {
                 "Продолжаете ли Вы работать после окончания рабочего дня?",
                 "Трудитесь ли Вы дольше своих сотрудников?",
-                "Часто ли Вы выполняете работу, с которой вполне\n" +
-                " могли бы справиться и без Вашего участия?",
-                "Занимаетесь ли Вы еще делами и проблемами из той\n" +
-                " сферы деятельности, которую уже делегировали\n" +
-                " одному из подчиненных?",
-                "Расходуете ли Вы время на рутинную работу,\n" +
-                " которую могут сделать другие?",
-                "Часто ли к Вам обращаются по поводу задач,\n " +
-                " не выполненных Вашими подчиненными?",
-                "Стремитесь ли Вы к тому, чтобы быть в курсе всех дел\n " +
-                " и иметь информацию обо всем?",
-                "Стоит ли Вам больших усилий придерживаться списка\n" +
-                " последовательности выполнения приоритетных работ?",
+                "Часто ли Вы выполняете работу, с которой вполне могли бы\n" +
+                "справиться и без Вашего участия?",
+                "Продолжаете ли Вы занимаетесь проблемами из той сферы\n" +
+                "деятельности, которую уже делегировали подчиненным?\n",
+                "Расходуете ли Вы время на рутинную работу, которую могут\n" +
+                "сделать другие?",
+                "Часто ли к Вам обращаются по поводу задач, не выполненных\n" +
+                "Вашими подчиненными?",
+                "Стремитесь ли Вы к тому, чтобы быть в курсе всех дел и иметь\n" +
+                "информацию обо всем?",
+                "Стоит ли Вам больших усилий придерживаться списка \n" +
+                "последовательности выполнения приоритетных работ?",
                 "Удается ли Вам найти, в случае необходимости, подчиненного,\n" +
-                " который помог бы Вам?",
-                "Хватает ли Вам времени на планирование?"};
+                "который помог бы Вам?",
+                "Хватает ли Вам времени на планирование?"
+        };
+
+        private RoundedPanel[] progressPanels;
+
         public Form1()
         {
             InitializeComponent();
@@ -32,11 +35,34 @@ namespace тема_1
             groupBox1.Hide();
             button2.Hide();
             button3.Hide();
+            progressPanels = new RoundedPanel[]
+            {
+                roundedPanel10, roundedPanel1, roundedPanel2, roundedPanel3, roundedPanel4,
+                roundedPanel5, roundedPanel6, roundedPanel7, roundedPanel8,
+                roundedPanel9
+            };
+
+            UpdatePanelColors();
+        }
+
+        private void UpdatePanelColors()
+        {
+            for (int i = 0; i < progressPanels.Length; i++)
+            {
+                if (i < n)
+                {
+                    progressPanels[i].BackColor = Color.DimGray;
+                }
+                else
+                {
+                    progressPanels[i].BackColor = Color.Silver;
+                }
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            label2.Text = (n + 1).ToString() + "/10";
+
             button1.Hide();
             label3.Visible = true;
             label3.Text = questions[n];
@@ -46,9 +72,13 @@ namespace тема_1
         }
         private void ShowAnswer(int p)
         {
-            label2.Hide();
-            groupBox1.Hide();
+            radioButton1.Hide();
+            radioButton2.Hide();
             button2.Hide();
+            for (int i = 0; i < progressPanels.Length; i++)
+            {
+                progressPanels[i].Hide();
+            }
             if (points < 6)
             {
                 label3.Text = $"Ваш результат: {points} баллов\n" +
@@ -65,12 +95,14 @@ namespace тема_1
             }
             button3.Visible = true;
         }
+
         private void NextQuestion(int num)
         {
             if (num < 10)
             {
-                label2.Text = (n + 1).ToString() + "/10";
+
                 label3.Text = questions[n];
+                UpdatePanelColors();
             }
             if (num == 10)
                 ShowAnswer(points);
@@ -104,6 +136,7 @@ namespace тема_1
             }
         }
 
+
         private void button3_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -118,9 +151,37 @@ namespace тема_1
             main.Show();
         }
 
+
+
+
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click_2(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
