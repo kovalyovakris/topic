@@ -122,3 +122,8 @@ C:\Users\HP\OneDrive\Documents\БГУИР\пуирчр\тесты\тема2\obj\
 C:\Users\HP\OneDrive\Documents\БГУИР\пуирчр\тесты\тема2\obj\Debug\net8.0-windows\тема2.dll
 C:\Users\HP\OneDrive\Documents\БГУИР\пуирчр\тесты\тема2\obj\Debug\net8.0-windows\refint\тема2.dll
 C:\Users\HP\OneDrive\Documents\БГУИР\пуирчр\тесты\тема2\obj\Debug\net8.0-windows\тема2.pdb
+C:\Users\HP\OneDrive\Documents\БГУИР\пуирчр\тесты\тема2\bin\Debug\net8.0-windows\тема2.deps.json
+C:\Users\HP\OneDrive\Documents\БГУИР\пуирчр\тесты\тема2\bin\Debug\net8.0-windows\тема2.runtimeconfig.json
+C:\Users\HP\OneDrive\Documents\БГУИР\пуирчр\тесты\тема2\bin\Debug\net8.0-windows\тема2.pdb
+C:\Users\HP\OneDrive\Documents\БГУИР\пуирчр\тесты\тема2\obj\Debug\net8.0-windows\тема2.genruntimeconfig.cache
+C:\Users\HP\OneDrive\Documents\БГУИР\пуирчр\тесты\тема2\obj\Debug\net8.0-windows\ref\тема2.dll

@@ -36,6 +36,7 @@ namespace тема_1
 			Button1 = new Button();
 			label3 = new Label();
 			groupBox1 = new RoundedGroupBox();
+			radioButton2 = new RadioButton();
 			roundedPanel9 = new RoundedPanel();
 			roundedPanel8 = new RoundedPanel();
 			roundedPanel7 = new RoundedPanel();
@@ -49,7 +50,6 @@ namespace тема_1
 			radioButton4 = new RadioButton();
 			button2 = new RoundButton();
 			radioButton3 = new RadioButton();
-			radioButton2 = new RadioButton();
 			radioButton1 = new RadioButton();
 			button3 = new Button();
 			pictureBox1 = new PictureBox();
@@ -121,6 +121,23 @@ namespace тема_1
 			groupBox1.Size = new Size(1160, 647);
 			groupBox1.TabIndex = 5;
 			groupBox1.TabStop = false;
+			groupBox1.Enter += groupBox1_Enter;
+			// 
+			// radioButton2
+			// 
+			radioButton2.AutoSize = true;
+			radioButton2.BackColor = Color.Transparent;
+			radioButton2.Font = new Font("Times New Roman", 13.875F);
+			radioButton2.ForeColor = Color.FromArgb(64, 64, 64);
+			radioButton2.Location = new Point(47, 270);
+			radioButton2.Margin = new Padding(5);
+			radioButton2.Name = "radioButton2";
+			radioButton2.Size = new Size(108, 46);
+			radioButton2.TabIndex = 1;
+			radioButton2.TabStop = true;
+			radioButton2.Text = "Нет";
+			radioButton2.UseVisualStyleBackColor = false;
+			radioButton2.CheckedChanged += radioButton2_CheckedChanged;
 			// 
 			// roundedPanel9
 			// 
@@ -266,22 +283,6 @@ namespace тема_1
 			radioButton3.Text = "Нет";
 			radioButton3.UseVisualStyleBackColor = false;
 			radioButton3.CheckedChanged += radioButton3_CheckedChanged;
-			// 
-			// radioButton2
-			// 
-			radioButton2.AutoSize = true;
-			radioButton2.BackColor = Color.Transparent;
-			radioButton2.Font = new Font("Times New Roman", 13.875F);
-			radioButton2.ForeColor = Color.FromArgb(64, 64, 64);
-			radioButton2.Location = new Point(47, 270);
-			radioButton2.Margin = new Padding(5);
-			radioButton2.Name = "radioButton2";
-			radioButton2.Size = new Size(108, 46);
-			radioButton2.TabIndex = 1;
-			radioButton2.TabStop = true;
-			radioButton2.Text = "Нет";
-			radioButton2.UseVisualStyleBackColor = false;
-			radioButton2.CheckedChanged += radioButton2_CheckedChanged;
 			// 
 			// radioButton1
 			// 
