@@ -80,7 +80,7 @@ namespace тема_1
 		public Test2()
 		{
 			InitializeComponent();
-			label3.Hide();
+			label2.Hide();
 			groupBox1.Hide();
 			button2.Hide();
 			button3.Hide();
@@ -113,24 +113,30 @@ namespace тема_1
 		{
 
 			Button1.Hide();
-			label3.Visible = true;
-			label3.Text = questions[n];
-			radioButton1.Text = answer1[n];
-			radioButton2.Text = answer2[n];
-			radioButton3.Text = answer3[n];
-			radioButton4.Text = answer4[n];
+			label2.Visible = true;
+			label2.Text = questions[n];
+			radioButton5.Text = answer1[n];
+			radioButton6.Text = answer2[n];
+			radioButton7.Text = answer3[n];
+			radioButton8.Text = answer4[n];
 			groupBox1.Visible = true;
 			button2.Visible = true;
 			n++;
 		}
 		private void ShowAnswer(int p)
 		{
-
-			groupBox1.Hide();
-			button2.Hide();
-			if (points <= 10)
+            radioButton5.Hide();
+            radioButton6.Hide();
+			radioButton7.Hide();
+			radioButton8.Hide();
+            roundButton2.Hide();
+            for (int i = 0; i < progressPanels.Length; i++)
+            {
+                progressPanels[i].Hide();
+            }
+            if (points <= 10)
 			{
-				label3.Text = $"Ваш результат: {points} баллов\n" +
+				label2.Text = $"Ваш результат: {points} баллов\n" +
 				"Рекомендации: Вам стоит рассмотреть\n" +
 				"возможность улучшения ваших навыков\n" +
 				"делегирования и принятия решений. Попробуйте\n" +
@@ -139,7 +145,7 @@ namespace тема_1
 			}
 			else if (points >= 11 && points <= 20)
 			{
-				label3.Text = $"Ваш результат: {points} баллов\n" +
+				label2.Text = $"Ваш результат: {points} баллов\n" +
 				"Рекомендации: У вас есть определенные знания \n" +
 				"и навыки, но есть еще над чем работать. Начните\n" +
 				"открыто обсуждать с командой важные решения,\n" +
@@ -148,7 +154,7 @@ namespace тема_1
 			}
 			else if (points >= 21 && points <= 30)
 			{
-				label3.Text = $"Ваш результат: {points} баллов\n" +
+				label2.Text = $"Ваш результат: {points} баллов\n" +
 				"Рекомендации: Вы на правильном пути! У вас\n" +
 				"достаточно уверенности в делегировании и\n" +
 				"принятии решений. Продолжайте развивать свои\n" +
@@ -157,7 +163,7 @@ namespace тема_1
 			}
 			else if (points >= 31 && points <= 40)
 			{
-				label3.Text = $"Ваш результат: {points} баллов\n" +
+				label2.Text = $"Ваш результат: {points} баллов\n" +
 				"Рекомендации: Вы обладаете высокими навыками\n" +
 				"делегирования и принятия решений. Продолжайте\n" +
 				"действовать в этом направлении и развивайте свою\n" +
@@ -171,44 +177,44 @@ namespace тема_1
 			if (num < 10)
 			{
 
-				label3.Text = questions[n];
-				radioButton1.Text = answer1[n];
-				radioButton2.Text = answer2[n];
-				radioButton3.Text = answer3[n];
-				radioButton4.Text = answer4[n];
+				label2.Text = questions[n];
+				radioButton5.Text = answer1[n];
+				radioButton6.Text = answer2[n];
+				radioButton7.Text = answer3[n];
+				radioButton8.Text = answer4[n];
 				UpdatePanelColors();
 			}
 			if (num == 10)
 				ShowAnswer(points);
-			radioButton1.Checked = false;
-			radioButton2.Checked = false;
-			radioButton3.Checked = false;
-			radioButton4.Checked = false;
+			radioButton5.Checked = false;
+			radioButton6.Checked = false;
+			radioButton7.Checked = false;
+			radioButton8.Checked = false;
 			n++;
 		}
 
 		private void button2_Click(object sender, EventArgs e)
 		{
-			if (!radioButton1.Checked && !radioButton2.Checked && !radioButton3.Checked && !radioButton4.Checked)
+			if (!radioButton5.Checked && !radioButton6.Checked && !radioButton7.Checked && !radioButton8.Checked)
 			{
 				MessageBox.Show("Выберите один из вариантов ответа");
 				return;
 			}
-			if (radioButton1.Checked)
+			if (radioButton5.Checked)
 			{
 				NextQuestion(n);
 			}
-			else if (radioButton2.Checked)
+			else if (radioButton6.Checked)
 			{
 				points++;
 				NextQuestion(n);
 			}
-			else if (radioButton3.Checked)
+			else if (radioButton7.Checked)
 			{
 				points = points + 2;
 				NextQuestion(n);
 			}
-			else if (radioButton4.Checked)
+			else if (radioButton8.Checked)
 			{
 				points = points + 3;
 				NextQuestion(n);
