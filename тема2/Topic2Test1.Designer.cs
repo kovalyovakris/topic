@@ -79,7 +79,7 @@ namespace тема2
 			button3.Location = new Point(738, 818);
 			button3.Margin = new Padding(5);
 			button3.Name = "button3";
-			button3.Size = new Size(322, 56);
+			button3.Size = new Size(348, 56);
 			button3.TabIndex = 15;
 			button3.Text = "Перейти к тесту 2";
 			button3.UseVisualStyleBackColor = true;
@@ -94,7 +94,7 @@ namespace тема2
 			button2.Location = new Point(783, 528);
 			button2.Margin = new Padding(5);
 			button2.Name = "button2";
-			button2.Size = new Size(336, 98);
+			button2.Size = new Size(362, 98);
 			button2.TabIndex = 14;
 			button2.Text = "Вперед";
 			button2.UseVisualStyleBackColor = false;
@@ -119,11 +119,11 @@ namespace тема2
 			groupBox1.Controls.Add(radioButton1);
 			groupBox1.Controls.Add(label3);
 			groupBox1.CornerRadius = 60;
-			groupBox1.Location = new Point(300, 163);
+			groupBox1.Location = new Point(287, 163);
 			groupBox1.Margin = new Padding(5);
 			groupBox1.Name = "groupBox1";
 			groupBox1.Padding = new Padding(5);
-			groupBox1.Size = new Size(1160, 646);
+			groupBox1.Size = new Size(1186, 646);
 			groupBox1.TabIndex = 13;
 			groupBox1.TabStop = false;
 			// 
@@ -292,7 +292,7 @@ namespace тема2
 			button1.Location = new Point(738, 322);
 			button1.Margin = new Padding(5);
 			button1.Name = "button1";
-			button1.Size = new Size(314, 56);
+			button1.Size = new Size(340, 56);
 			button1.TabIndex = 11;
 			button1.Text = "Начать тест 1";
 			button1.UseVisualStyleBackColor = true;
@@ -315,7 +315,7 @@ namespace тема2
 			label1.AutoSize = true;
 			label1.BackColor = Color.Transparent;
 			label1.Font = new Font("Times New Roman", 12F);
-			label1.Location = new Point(620, 51);
+			label1.Location = new Point(624, 51);
 			label1.Margin = new Padding(5, 0, 5, 0);
 			label1.Name = "label1";
 			label1.Size = new Size(519, 36);
@@ -327,13 +327,16 @@ namespace тема2
 			AutoScaleDimensions = new SizeF(13F, 32F);
 			AutoScaleMode = AutoScaleMode.Font;
 			BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-			ClientSize = new Size(1734, 1054);
+			BackgroundImageLayout = ImageLayout.Zoom;
+			ClientSize = new Size(1760, 1054);
 			Controls.Add(pictureBox1);
 			Controls.Add(button3);
 			Controls.Add(groupBox1);
 			Controls.Add(button1);
 			Controls.Add(label2);
 			Controls.Add(label1);
+			DoubleBuffered = true;
+			FormBorderStyle = FormBorderStyle.None;
 			Margin = new Padding(5);
 			Name = "Topic2Test1";
 			StartPosition = FormStartPosition.CenterScreen;

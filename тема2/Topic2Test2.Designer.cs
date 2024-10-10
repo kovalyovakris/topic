@@ -36,12 +36,6 @@ namespace тема2
 			button3 = new Button();
 			button2 = new RoundButton();
 			groupBox1 = new RoundedGroupBox();
-			radioButton2 = new RadioButton();
-			radioButton1 = new RadioButton();
-			label3 = new Label();
-			Button1 = new Button();
-			label2 = new Label();
-			label1 = new Label();
 			roundedPanel9 = new RoundedPanel();
 			roundedPanel8 = new RoundedPanel();
 			roundedPanel7 = new RoundedPanel();
@@ -52,6 +46,12 @@ namespace тема2
 			roundedPanel2 = new RoundedPanel();
 			roundedPanel1 = new RoundedPanel();
 			roundedPanel10 = new RoundedPanel();
+			radioButton2 = new RadioButton();
+			radioButton1 = new RadioButton();
+			label3 = new Label();
+			Button1 = new Button();
+			label2 = new Label();
+			label1 = new Label();
 			((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
 			groupBox1.SuspendLayout();
 			SuspendLayout();
@@ -114,91 +114,13 @@ namespace тема2
 			groupBox1.Controls.Add(button2);
 			groupBox1.Controls.Add(label3);
 			groupBox1.CornerRadius = 60;
-			groupBox1.Location = new Point(300, 163);
+			groupBox1.Location = new Point(287, 163);
 			groupBox1.Margin = new Padding(5);
 			groupBox1.Name = "groupBox1";
 			groupBox1.Padding = new Padding(5);
-			groupBox1.Size = new Size(1160, 646);
+			groupBox1.Size = new Size(1186, 646);
 			groupBox1.TabIndex = 15;
 			groupBox1.TabStop = false;
-			// 
-			// radioButton2
-			// 
-			radioButton2.AutoSize = true;
-			radioButton2.BackColor = Color.Transparent;
-			radioButton2.Font = new Font("Times New Roman", 13.875F);
-			radioButton2.ForeColor = Color.FromArgb(64, 64, 64);
-			radioButton2.Location = new Point(58, 300);
-			radioButton2.Margin = new Padding(5);
-			radioButton2.Name = "radioButton2";
-			radioButton2.Size = new Size(108, 46);
-			radioButton2.TabIndex = 1;
-			radioButton2.TabStop = true;
-			radioButton2.Text = "Нет";
-			radioButton2.UseVisualStyleBackColor = false;
-			// 
-			// radioButton1
-			// 
-			radioButton1.AutoSize = true;
-			radioButton1.BackColor = Color.Transparent;
-			radioButton1.Font = new Font("Times New Roman", 13.875F);
-			radioButton1.ForeColor = Color.FromArgb(64, 64, 64);
-			radioButton1.Location = new Point(58, 231);
-			radioButton1.Margin = new Padding(5);
-			radioButton1.Name = "radioButton1";
-			radioButton1.Size = new Size(90, 46);
-			radioButton1.TabIndex = 0;
-			radioButton1.TabStop = true;
-			radioButton1.Text = "Да";
-			radioButton1.UseVisualStyleBackColor = false;
-			// 
-			// label3
-			// 
-			label3.AutoSize = true;
-			label3.BackColor = Color.Transparent;
-			label3.Font = new Font("Times New Roman", 13.875F);
-			label3.ForeColor = Color.FromArgb(64, 64, 64);
-			label3.Location = new Point(47, 112);
-			label3.Margin = new Padding(5, 0, 5, 0);
-			label3.Name = "label3";
-			label3.Size = new Size(973, 42);
-			label3.TabIndex = 14;
-			label3.Text = "Продолжаете ли Вы работать после окончания рабочего дня?";
-			label3.Click += label3_Click;
-			// 
-			// Button1
-			// 
-			Button1.Location = new Point(725, 285);
-			Button1.Margin = new Padding(5);
-			Button1.Name = "Button1";
-			Button1.Size = new Size(314, 74);
-			Button1.TabIndex = 13;
-			Button1.Text = "Начать тест 2";
-			Button1.UseVisualStyleBackColor = true;
-			Button1.Click += Button1_Click;
-			// 
-			// label2
-			// 
-			label2.AutoSize = true;
-			label2.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 204);
-			label2.Location = new Point(796, 187);
-			label2.Margin = new Padding(5, 0, 5, 0);
-			label2.Name = "label2";
-			label2.Size = new Size(162, 36);
-			label2.TabIndex = 12;
-			label2.Text = "Тест 2 из 3";
-			// 
-			// label1
-			// 
-			label1.AutoSize = true;
-			label1.BackColor = Color.Transparent;
-			label1.Font = new Font("Times New Roman", 12F);
-			label1.Location = new Point(620, 51);
-			label1.Margin = new Padding(5, 0, 5, 0);
-			label1.Name = "label1";
-			label1.Size = new Size(519, 36);
-			label1.TabIndex = 11;
-			label1.Text = "Тест №2: отбор персонала в IT-сфере";
 			// 
 			// roundedPanel9
 			// 
@@ -300,12 +222,90 @@ namespace тема2
 			roundedPanel10.Size = new Size(80, 19);
 			roundedPanel10.TabIndex = 17;
 			// 
+			// radioButton2
+			// 
+			radioButton2.AutoSize = true;
+			radioButton2.BackColor = Color.Transparent;
+			radioButton2.Font = new Font("Times New Roman", 13.875F);
+			radioButton2.ForeColor = Color.FromArgb(64, 64, 64);
+			radioButton2.Location = new Point(58, 300);
+			radioButton2.Margin = new Padding(5);
+			radioButton2.Name = "radioButton2";
+			radioButton2.Size = new Size(108, 46);
+			radioButton2.TabIndex = 1;
+			radioButton2.TabStop = true;
+			radioButton2.Text = "Нет";
+			radioButton2.UseVisualStyleBackColor = false;
+			// 
+			// radioButton1
+			// 
+			radioButton1.AutoSize = true;
+			radioButton1.BackColor = Color.Transparent;
+			radioButton1.Font = new Font("Times New Roman", 13.875F);
+			radioButton1.ForeColor = Color.FromArgb(64, 64, 64);
+			radioButton1.Location = new Point(58, 231);
+			radioButton1.Margin = new Padding(5);
+			radioButton1.Name = "radioButton1";
+			radioButton1.Size = new Size(90, 46);
+			radioButton1.TabIndex = 0;
+			radioButton1.TabStop = true;
+			radioButton1.Text = "Да";
+			radioButton1.UseVisualStyleBackColor = false;
+			// 
+			// label3
+			// 
+			label3.AutoSize = true;
+			label3.BackColor = Color.Transparent;
+			label3.Font = new Font("Times New Roman", 13.875F);
+			label3.ForeColor = Color.FromArgb(64, 64, 64);
+			label3.Location = new Point(47, 112);
+			label3.Margin = new Padding(5, 0, 5, 0);
+			label3.Name = "label3";
+			label3.Size = new Size(973, 42);
+			label3.TabIndex = 14;
+			label3.Text = "Продолжаете ли Вы работать после окончания рабочего дня?";
+			label3.Click += label3_Click;
+			// 
+			// Button1
+			// 
+			Button1.Location = new Point(725, 285);
+			Button1.Margin = new Padding(5);
+			Button1.Name = "Button1";
+			Button1.Size = new Size(314, 74);
+			Button1.TabIndex = 13;
+			Button1.Text = "Начать тест 2";
+			Button1.UseVisualStyleBackColor = true;
+			Button1.Click += Button1_Click;
+			// 
+			// label2
+			// 
+			label2.AutoSize = true;
+			label2.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 204);
+			label2.Location = new Point(796, 187);
+			label2.Margin = new Padding(5, 0, 5, 0);
+			label2.Name = "label2";
+			label2.Size = new Size(162, 36);
+			label2.TabIndex = 12;
+			label2.Text = "Тест 2 из 3";
+			// 
+			// label1
+			// 
+			label1.AutoSize = true;
+			label1.BackColor = Color.Transparent;
+			label1.Font = new Font("Times New Roman", 12F);
+			label1.Location = new Point(620, 51);
+			label1.Margin = new Padding(5, 0, 5, 0);
+			label1.Name = "label1";
+			label1.Size = new Size(519, 36);
+			label1.TabIndex = 11;
+			label1.Text = "Тест №2: отбор персонала в IT-сфере";
+			// 
 			// Topic2Test2
 			// 
 			AutoScaleDimensions = new SizeF(13F, 32F);
 			AutoScaleMode = AutoScaleMode.Font;
 			BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-			ClientSize = new Size(1734, 1072);
+			ClientSize = new Size(1734, 983);
 			Controls.Add(pictureBox1);
 			Controls.Add(button3);
 			Controls.Add(groupBox1);
