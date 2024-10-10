@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static тема_1.Form1;
 
 namespace тема2
 {
@@ -15,16 +16,27 @@ namespace тема2
         private int n = 0;
         private int points = 0;
         private String[] questions = new string[10] {
-                "Какой из следующих языков программирования\n"+" наиболее популярен для веб-разработки?",
-                "Какой метод разработки программного обеспечения\n"+"предполагает итеративный подход\n"+"и тесное взаимодействие с клиентом?",
-                "Какой инструмент управления версиями кода позволяет\n"+"отслеживать изменения и координировать\n"+"работу нескольких разработчиков?",
-                "Какое из следующих понятий связано\n"+"с проектированием баз данных?",
-                "Какой тип тестирования программного обеспечения\n"+"ориентирован на проверку работы отдельных\n"+"компонентов программы?\n",
-                "Какой алгоритм поиска в массиве является\n"+ "наиболее эффективным для отсортированных данных?",
-                "Какой протокол используется для передачи данных\n"+ "по сети в веб-браузере?",
-                "Какой из следующих инструментов является средой\n"+ "разработки для Python?",
-                "Какой принцип объектно-ориентированного\n"+"программирования предполагает скрытие данных\n"+ "и доступ к ним через методы?",
-                "Какой из следующих подходов к разработке\n" +"программного обеспечения помогает поддерживать\n" +"высокое качество кода и минимизировать ошибки?"};
+                
+                "Какой из следующих языков программирования наиболее\n"+
+                "популярен для веб-разработки?",
+                "Какой метод разработки ПО предполагает итеративный\n"+
+                "подход и тесное взаимодействие с клиентом?",
+                "Какой инструмент управления версиями кода позволяет\n"+ 
+                "отслеживать изменения и координировать разработчиков?",
+                "Какое из следующих понятий связано с проектированием\n"+
+                "баз данных?",
+                "Какой тип тестирования ПО ориентирован на проверку\n"+ 
+                "работы отдельных компонентов программы?",
+                "Какой алгоритм поиска в массиве является наиболее\n"+
+                "эффективным для отсортированных данных?",
+                "Какой протокол используется для передачи данных по \n"+
+                "сети в веб-браузере?",
+                "Какой из следующих инструментов является средой\n"+
+                "разработки для Python?",
+                "Какой принцип ООП предполагает скрытие данных и доступ\n"+
+                "к ним через методы?",
+                "Какой из следующих подходов к разработке ПО помогает\n"+
+                "поддерживать высокое качество кода и минимизировать ошибки?"};
         private String[] answer1 = new string[10] {
             "COBOL",
             "Водопадная модель ",
@@ -61,14 +73,37 @@ namespace тема2
             "Инкапсуляция ",
             "Рефакторинг",
         };
-        public Topic2Test3()
+		private RoundedPanel[] progressPanels;
+		public Topic2Test3()
         {
             InitializeComponent();
             label3.Hide();
             groupBox1.Hide();
             button2.Hide();
-        }
-        private void Button1_Click(object sender, EventArgs e)
+			progressPanels = new RoundedPanel[]
+			{
+				roundedPanel10, roundedPanel1, roundedPanel2, roundedPanel3, roundedPanel4,
+				roundedPanel5, roundedPanel6, roundedPanel7, roundedPanel8,
+				roundedPanel9
+			};
+
+			UpdatePanelColors();
+		}
+		private void UpdatePanelColors()
+		{
+			for (int i = 0; i < progressPanels.Length; i++)
+			{
+				if (i < n)
+				{
+					progressPanels[i].BackColor = Color.DimGray;
+				}
+				else
+				{
+					progressPanels[i].BackColor = Color.Silver;
+				}
+			}
+		}
+		private void Button1_Click(object sender, EventArgs e)
         {
             label2.Text = (n + 1).ToString() + "/10";
             Button1.Hide();
@@ -116,8 +151,10 @@ namespace тема2
                 radioButton1.Text = answer1[n];
                 radioButton2.Text = answer2[n];
                 radioButton3.Text = answer3[n];
-            }
-            if (num == 10)
+				UpdatePanelColors();
+
+			}
+			if (num == 10)
                 ShowAnswer(points);
             radioButton1.Checked = false;
             radioButton2.Checked = false;

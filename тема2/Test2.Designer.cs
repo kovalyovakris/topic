@@ -426,6 +426,7 @@ namespace тема_1
 			// 
 			label2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
 			label2.AutoSize = true;
+			label2.BackColor = Color.Transparent;
 			label2.Font = new Font("Times New Roman", 13.875F, FontStyle.Regular, GraphicsUnit.Point, 204);
 			label2.ForeColor = Color.FromArgb(64, 64, 64);
 			label2.Location = new Point(47, 112);
