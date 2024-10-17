@@ -253,13 +253,16 @@ namespace тема2
 			// 
 			// Button1
 			// 
+			Button1.BackColor = Color.YellowGreen;
+			Button1.Font = new Font("Times New Roman", 13.875F);
+			Button1.ForeColor = Color.FromArgb(64, 64, 64);
 			Button1.Location = new Point(746, 290);
 			Button1.Margin = new Padding(5);
 			Button1.Name = "Button1";
 			Button1.Size = new Size(314, 74);
 			Button1.TabIndex = 16;
-			Button1.Text = "Начать тест 3";
-			Button1.UseVisualStyleBackColor = true;
+			Button1.Text = "Начать тест №3";
+			Button1.UseVisualStyleBackColor = false;
 			Button1.Click += Button1_Click;
 			// 
 			// label2
@@ -269,9 +272,8 @@ namespace тема2
 			label2.Location = new Point(817, 192);
 			label2.Margin = new Padding(5, 0, 5, 0);
 			label2.Name = "label2";
-			label2.Size = new Size(162, 36);
+			label2.Size = new Size(0, 36);
 			label2.TabIndex = 15;
-			label2.Text = "Тест 3 из 3";
 			// 
 			// label1
 			// 
@@ -304,15 +306,16 @@ namespace тема2
 			// 
 			AutoScaleDimensions = new SizeF(13F, 32F);
 			AutoScaleMode = AutoScaleMode.Font;
-			BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-			BackgroundImageLayout = ImageLayout.Center;
-			ClientSize = new Size(1734, 983);
+			BackgroundImage = Properties.Resources.Монтажная_область_2;
+			BackgroundImageLayout = ImageLayout.Stretch;
+			ClientSize = new Size(1760, 1054);
 			Controls.Add(pictureBox1);
 			Controls.Add(groupBox1);
 			Controls.Add(Button1);
 			Controls.Add(label2);
 			Controls.Add(label1);
 			DoubleBuffered = true;
+			FormBorderStyle = FormBorderStyle.None;
 			Margin = new Padding(5);
 			Name = "Topic2Test3";
 			StartPosition = FormStartPosition.CenterScreen;

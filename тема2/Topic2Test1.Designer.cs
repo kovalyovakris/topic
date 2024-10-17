@@ -33,7 +33,7 @@ namespace тема2
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Topic2Test1));
 			pictureBox1 = new PictureBox();
-			button3 = new Button();
+			button3 = new RoundButton();
 			button2 = new RoundButton();
 			groupBox1 = new RoundedGroupBox();
 			roundedPanel9 = new RoundedPanel();
@@ -50,7 +50,7 @@ namespace тема2
 			radioButton2 = new RadioButton();
 			radioButton1 = new RadioButton();
 			label3 = new Label();
-			button1 = new Button();
+			button1 = new RoundButton();
 			label2 = new Label();
 			label1 = new Label();
 			((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -75,14 +75,15 @@ namespace тема2
 			// button3
 			// 
 			button3.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-			button3.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
-			button3.Location = new Point(738, 818);
+			button3.BackColor = Color.YellowGreen;
+			button3.Font = new Font("Times New Roman", 13.875F);
+			button3.Location = new Point(709, 851);
 			button3.Margin = new Padding(5);
 			button3.Name = "button3";
-			button3.Size = new Size(348, 56);
+			button3.Size = new Size(342, 74);
 			button3.TabIndex = 15;
-			button3.Text = "Перейти к тесту 2";
-			button3.UseVisualStyleBackColor = true;
+			button3.Text = "Перейти к тесту №2";
+			button3.UseVisualStyleBackColor = false;
 			button3.Click += button3_Click;
 			// 
 			// button2
@@ -289,13 +290,15 @@ namespace тема2
 			// button1
 			// 
 			button1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+			button1.BackColor = Color.YellowGreen;
+			button1.Font = new Font("Times New Roman", 13.875F);
 			button1.Location = new Point(738, 322);
 			button1.Margin = new Padding(5);
 			button1.Name = "button1";
-			button1.Size = new Size(340, 56);
+			button1.Size = new Size(314, 74);
 			button1.TabIndex = 11;
-			button1.Text = "Начать тест 1";
-			button1.UseVisualStyleBackColor = true;
+			button1.Text = "Начать тест №1";
+			button1.UseVisualStyleBackColor = false;
 			button1.Click += button1_Click;
 			// 
 			// label2
@@ -306,9 +309,8 @@ namespace тема2
 			label2.Location = new Point(804, 189);
 			label2.Margin = new Padding(5, 0, 5, 0);
 			label2.Name = "label2";
-			label2.Size = new Size(162, 36);
+			label2.Size = new Size(0, 36);
 			label2.TabIndex = 10;
-			label2.Text = "Тест 1 из 3";
 			// 
 			// label1
 			// 
@@ -327,7 +329,7 @@ namespace тема2
 			AutoScaleDimensions = new SizeF(13F, 32F);
 			AutoScaleMode = AutoScaleMode.Font;
 			BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-			BackgroundImageLayout = ImageLayout.Zoom;
+			BackgroundImageLayout = ImageLayout.Stretch;
 			ClientSize = new Size(1760, 1054);
 			Controls.Add(pictureBox1);
 			Controls.Add(button3);
@@ -341,6 +343,7 @@ namespace тема2
 			Name = "Topic2Test1";
 			StartPosition = FormStartPosition.CenterScreen;
 			Text = "Topic2Test1";
+			Load += Topic2Test1_Load;
 			((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
 			groupBox1.ResumeLayout(false);
 			groupBox1.PerformLayout();
@@ -350,13 +353,13 @@ namespace тема2
 
 		#endregion
 		private PictureBox pictureBox1;
-        private Button button3;
+        private RoundButton button3;
         private RoundButton button2;
         private RoundedGroupBox groupBox1;
         private RadioButton radioButton2;
         private RadioButton radioButton1;
         private Label label3;
-        private Button button1;
+        private RoundButton button1;
         private Label label2;
         private Label label1;
         private RadioButton radioButton3;

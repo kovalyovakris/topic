@@ -33,7 +33,7 @@ namespace тема2
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Topic2Test2));
 			pictureBox1 = new PictureBox();
-			button3 = new Button();
+			button3 = new RoundButton();
 			button2 = new RoundButton();
 			groupBox1 = new RoundedGroupBox();
 			roundedPanel9 = new RoundedPanel();
@@ -49,7 +49,7 @@ namespace тема2
 			radioButton2 = new RadioButton();
 			radioButton1 = new RadioButton();
 			label3 = new Label();
-			Button1 = new Button();
+			Button1 = new RoundButton();
 			label2 = new Label();
 			label1 = new Label();
 			((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -73,14 +73,15 @@ namespace тема2
 			// 
 			// button3
 			// 
-			button3.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
-			button3.Location = new Point(748, 826);
+			button3.BackColor = Color.YellowGreen;
+			button3.Font = new Font("Times New Roman", 13.875F);
+			button3.Location = new Point(709, 851);
 			button3.Margin = new Padding(5);
 			button3.Name = "button3";
-			button3.Size = new Size(322, 74);
+			button3.Size = new Size(342, 74);
 			button3.TabIndex = 17;
-			button3.Text = "Перейти к тесту 3";
-			button3.UseVisualStyleBackColor = true;
+			button3.Text = "Перейти к тесту №3";
+			button3.UseVisualStyleBackColor = false;
 			button3.Click += button3_Click;
 			// 
 			// button2
@@ -99,6 +100,7 @@ namespace тема2
 			// 
 			// groupBox1
 			// 
+			groupBox1.BackgroundImage = Properties.Resources.Монтажная_область_2;
 			groupBox1.Controls.Add(roundedPanel9);
 			groupBox1.Controls.Add(roundedPanel8);
 			groupBox1.Controls.Add(roundedPanel7);
@@ -268,13 +270,16 @@ namespace тема2
 			// 
 			// Button1
 			// 
+			Button1.BackColor = Color.YellowGreen;
+			Button1.Font = new Font("Times New Roman", 13.875F);
+			Button1.ForeColor = Color.FromArgb(64, 64, 64);
 			Button1.Location = new Point(725, 285);
 			Button1.Margin = new Padding(5);
 			Button1.Name = "Button1";
 			Button1.Size = new Size(314, 74);
 			Button1.TabIndex = 13;
-			Button1.Text = "Начать тест 2";
-			Button1.UseVisualStyleBackColor = true;
+			Button1.Text = "Начать тест №2";
+			Button1.UseVisualStyleBackColor = false;
 			Button1.Click += Button1_Click;
 			// 
 			// label2
@@ -284,9 +289,8 @@ namespace тема2
 			label2.Location = new Point(796, 187);
 			label2.Margin = new Padding(5, 0, 5, 0);
 			label2.Name = "label2";
-			label2.Size = new Size(162, 36);
+			label2.Size = new Size(0, 36);
 			label2.TabIndex = 12;
-			label2.Text = "Тест 2 из 3";
 			// 
 			// label1
 			// 
@@ -304,15 +308,19 @@ namespace тема2
 			// 
 			AutoScaleDimensions = new SizeF(13F, 32F);
 			AutoScaleMode = AutoScaleMode.Font;
-			BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-			ClientSize = new Size(1734, 983);
+			BackgroundImage = Properties.Resources.Монтажная_область_2;
+			BackgroundImageLayout = ImageLayout.Stretch;
+			ClientSize = new Size(1760, 1054);
 			Controls.Add(pictureBox1);
 			Controls.Add(button3);
 			Controls.Add(groupBox1);
 			Controls.Add(Button1);
 			Controls.Add(label2);
 			Controls.Add(label1);
+			DoubleBuffered = true;
+			FormBorderStyle = FormBorderStyle.None;
 			Margin = new Padding(5);
+			MaximizeBox = false;
 			Name = "Topic2Test2";
 			StartPosition = FormStartPosition.CenterScreen;
 			Text = "Topic2Test2";
@@ -325,13 +333,13 @@ namespace тема2
 
 		#endregion
 		private PictureBox pictureBox1;
-        private Button button3;
+        private RoundButton button3;
         private RoundButton button2;
         private RoundedGroupBox groupBox1;
         private RadioButton radioButton2;
         private RadioButton radioButton1;
         private Label label3;
-        private Button Button1;
+        private RoundButton Button1;
         private Label label2;
         private Label label1;
 		private RoundedPanel roundedPanel9;
