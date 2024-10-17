@@ -33,14 +33,14 @@ namespace тема_1
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Test2));
 			label1 = new Label();
-			Button1 = new Button();
+			Button1 = new RoundButton();
 			label3 = new Label();
 			radioButton4 = new RadioButton();
 			button2 = new RoundButton();
 			radioButton3 = new RadioButton();
 			radioButton2 = new RadioButton();
 			radioButton1 = new RadioButton();
-			button3 = new Button();
+			button3 = new RoundButton();
 			pictureBox1 = new PictureBox();
 			groupBox1 = new RoundedGroupBox();
 			radioButton8 = new RadioButton();
@@ -78,13 +78,16 @@ namespace тема_1
 			// 
 			// Button1
 			// 
+			Button1.BackColor = Color.YellowGreen;
+			Button1.Font = new Font("Times New Roman", 13.875F);
+			Button1.ForeColor = Color.FromArgb(64, 64, 64);
 			Button1.Location = new Point(726, 290);
 			Button1.Margin = new Padding(5);
 			Button1.Name = "Button1";
 			Button1.Size = new Size(314, 74);
 			Button1.TabIndex = 3;
-			Button1.Text = "Начать тест 2";
-			Button1.UseVisualStyleBackColor = true;
+			Button1.Text = "Начать тест №2";
+			Button1.UseVisualStyleBackColor = false;
 			Button1.Click += Button1_Click;
 			// 
 			// label3
@@ -180,14 +183,16 @@ namespace тема_1
 			// 
 			// button3
 			// 
-			button3.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
+			button3.BackColor = Color.YellowGreen;
+			button3.Font = new Font("Times New Roman", 13.875F);
+			button3.ForeColor = Color.FromArgb(64, 64, 64);
 			button3.Location = new Point(730, 851);
 			button3.Margin = new Padding(5);
 			button3.Name = "button3";
-			button3.Size = new Size(322, 74);
+			button3.Size = new Size(363, 98);
 			button3.TabIndex = 7;
-			button3.Text = "Перейти к тесту 3";
-			button3.UseVisualStyleBackColor = true;
+			button3.Text = "Перейти к тесту №3";
+			button3.UseVisualStyleBackColor = false;
 			button3.Click += button3_Click;
 			// 
 			// pictureBox1
@@ -236,6 +241,7 @@ namespace тема_1
 			groupBox1.Size = new Size(1160, 646);
 			groupBox1.TabIndex = 10;
 			groupBox1.TabStop = false;
+			groupBox1.Enter += groupBox1_Enter;
 			// 
 			// radioButton8
 			// 
@@ -464,13 +470,13 @@ namespace тема_1
 		#endregion
 
 		private Label label1;
-        private Button Button1;
+        private RoundButton Button1;
         private Label label3;
         private RoundedGroupBox groupBox1;
         private RadioButton radioButton2;
         private RadioButton radioButton1;
         private RoundButton button2;
-        private Button button3;
+        private RoundButton button3;
         private RadioButton radioButton4;
         private RadioButton radioButton3;
         private PictureBox pictureBox1;

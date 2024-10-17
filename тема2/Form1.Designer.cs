@@ -33,7 +33,7 @@ namespace тема_1
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
 			label1 = new Label();
-			button1 = new Button();
+			button1 = new RoundButton();
 			label3 = new Label();
 			groupBox1 = new RoundedGroupBox();
 			roundedPanel9 = new RoundedPanel();
@@ -49,7 +49,7 @@ namespace тема_1
 			radioButton2 = new RadioButton();
 			radioButton1 = new RadioButton();
 			button2 = new RoundButton();
-			button3 = new Button();
+			button3 = new RoundButton();
 			pictureBox1 = new PictureBox();
 			groupBox1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -72,13 +72,18 @@ namespace тема_1
 			// button1
 			// 
 			button1.Anchor = AnchorStyles.None;
+			button1.BackColor = Color.YellowGreen;
+			button1.FlatAppearance.BorderSize = 0;
+			button1.FlatStyle = FlatStyle.Flat;
+			button1.Font = new Font("Times New Roman", 13.875F);
+			button1.ForeColor = Color.FromArgb(64, 64, 64);
 			button1.Location = new Point(738, 322);
 			button1.Margin = new Padding(5);
 			button1.Name = "button1";
 			button1.Size = new Size(314, 74);
 			button1.TabIndex = 2;
-			button1.Text = "Начать тест 1";
-			button1.UseVisualStyleBackColor = true;
+			button1.Text = "Начать тест №1";
+			button1.UseVisualStyleBackColor = false;
 			button1.Click += button1_Click;
 			// 
 			// label3
@@ -268,14 +273,16 @@ namespace тема_1
 			// button3
 			// 
 			button3.Anchor = AnchorStyles.None;
-			button3.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
+			button3.BackColor = Color.YellowGreen;
+			button3.Font = new Font("Times New Roman", 13.875F);
+			button3.ForeColor = Color.FromArgb(64, 64, 64);
 			button3.Location = new Point(730, 851);
 			button3.Margin = new Padding(5);
 			button3.Name = "button3";
-			button3.Size = new Size(322, 74);
+			button3.Size = new Size(363, 98);
 			button3.TabIndex = 6;
-			button3.Text = "Перейти к тесту 2";
-			button3.UseVisualStyleBackColor = true;
+			button3.Text = "Перейти к тесту №2";
+			button3.UseVisualStyleBackColor = false;
 			button3.Click += button3_Click;
 			// 
 			// pictureBox1
@@ -418,13 +425,13 @@ namespace тема_1
 		}
 
 		private Label label1;
-        private Button button1;
+        private RoundButton button1;
         private Label label3;
         private RoundedGroupBox groupBox1;
         private RadioButton radioButton2;
         private RadioButton radioButton1;
         private RoundButton button2;
-        private Button button3;
+        private RoundButton button3;
         private PictureBox pictureBox1;
 		private RoundedPanel roundedPanel10;
 		private RoundedPanel roundedPanel4;
@@ -436,5 +443,5 @@ namespace тема_1
 		private RoundedPanel roundedPanel7;
 		private RoundedPanel roundedPanel6;
 		private RoundedPanel roundedPanel5;
-    }
+	}
 }

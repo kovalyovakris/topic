@@ -48,7 +48,7 @@ namespace тема_1
 			radioButton2 = new RadioButton();
 			radioButton1 = new RadioButton();
 			label3 = new Label();
-			Button1 = new Button();
+			Button1 = new RoundButton();
 			label2 = new Label();
 			label1 = new Label();
 			pictureBox1 = new PictureBox();
@@ -89,6 +89,7 @@ namespace тема_1
 			groupBox1.Controls.Add(radioButton1);
 			groupBox1.Controls.Add(label3);
 			groupBox1.CornerRadius = 60;
+			groupBox1.Font = new Font("Times New Roman", 13.875F);
 			groupBox1.Location = new Point(301, 163);
 			groupBox1.Margin = new Padding(5);
 			groupBox1.Name = "groupBox1";
@@ -257,25 +258,28 @@ namespace тема_1
 			// 
 			// Button1
 			// 
-			Button1.Location = new Point(730, 296);
+			Button1.BackColor = Color.YellowGreen;
+			Button1.Font = new Font("Times New Roman", 13.875F);
+			Button1.ForeColor = Color.FromArgb(64, 64, 64);
+			Button1.Location = new Point(738, 322);
 			Button1.Margin = new Padding(5);
 			Button1.Name = "Button1";
 			Button1.Size = new Size(314, 74);
 			Button1.TabIndex = 10;
-			Button1.Text = "Начать тест 3";
-			Button1.UseVisualStyleBackColor = true;
+			Button1.Text = "Начать тест №3";
+			Button1.UseVisualStyleBackColor = false;
 			Button1.Click += Button1_Click;
 			// 
 			// label2
 			// 
 			label2.AutoSize = true;
+			label2.BackColor = Color.Transparent;
 			label2.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 204);
-			label2.Location = new Point(801, 198);
+			label2.Location = new Point(0, 0);
 			label2.Margin = new Padding(5, 0, 5, 0);
 			label2.Name = "label2";
-			label2.Size = new Size(162, 36);
+			label2.Size = new Size(0, 36);
 			label2.TabIndex = 9;
-			label2.Text = "Тест 3 из 3";
 			// 
 			// label1
 			// 
@@ -336,7 +340,7 @@ namespace тема_1
         private RadioButton radioButton2;
         private RadioButton radioButton1;
         private Label label3;
-        private Button Button1;
+        private RoundButton Button1;
         private Label label2;
         private Label label1;
         private PictureBox pictureBox1;
