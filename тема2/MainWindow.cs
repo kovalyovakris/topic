@@ -48,7 +48,7 @@ namespace тема2
         private void buttTest6_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Topic6Test3 topic6 = new Topic6Test3();
+            Topic6Test1 topic6 = new Topic6Test1();
             topic6.Show();
         }
 

@@ -117,7 +117,7 @@ namespace тема_1
             groupBox1.CornerRadius = 60;
             groupBox1.Location = new Point(185, 102);
             groupBox1.Name = "groupBox1";
-            groupBox1.Padding = new Padding(10, 10, 10, 10);
+            groupBox1.Padding = new Padding(10);
             groupBox1.Size = new Size(714, 404);
             groupBox1.TabIndex = 4;
             groupBox1.TabStop = false;
@@ -128,7 +128,7 @@ namespace тема_1
             roundedPanel9.CornerRadius = 20;
             roundedPanel9.ForeColor = SystemColors.AppWorkspace;
             roundedPanel9.Location = new Point(562, 42);
-            roundedPanel9.Margin = new Padding(2, 2, 2, 2);
+            roundedPanel9.Margin = new Padding(2);
             roundedPanel9.Name = "roundedPanel9";
             roundedPanel9.Size = new Size(49, 12);
             roundedPanel9.TabIndex = 15;
@@ -139,7 +139,7 @@ namespace тема_1
             roundedPanel8.CornerRadius = 20;
             roundedPanel8.ForeColor = SystemColors.AppWorkspace;
             roundedPanel8.Location = new Point(503, 42);
-            roundedPanel8.Margin = new Padding(2, 2, 2, 2);
+            roundedPanel8.Margin = new Padding(2);
             roundedPanel8.Name = "roundedPanel8";
             roundedPanel8.Size = new Size(49, 12);
             roundedPanel8.TabIndex = 14;
@@ -150,7 +150,7 @@ namespace тема_1
             roundedPanel7.CornerRadius = 20;
             roundedPanel7.ForeColor = SystemColors.AppWorkspace;
             roundedPanel7.Location = new Point(445, 42);
-            roundedPanel7.Margin = new Padding(2, 2, 2, 2);
+            roundedPanel7.Margin = new Padding(2);
             roundedPanel7.Name = "roundedPanel7";
             roundedPanel7.Size = new Size(49, 12);
             roundedPanel7.TabIndex = 13;
@@ -161,7 +161,7 @@ namespace тема_1
             roundedPanel6.CornerRadius = 20;
             roundedPanel6.ForeColor = SystemColors.AppWorkspace;
             roundedPanel6.Location = new Point(386, 42);
-            roundedPanel6.Margin = new Padding(2, 2, 2, 2);
+            roundedPanel6.Margin = new Padding(2);
             roundedPanel6.Name = "roundedPanel6";
             roundedPanel6.Size = new Size(49, 12);
             roundedPanel6.TabIndex = 12;
@@ -172,7 +172,7 @@ namespace тема_1
             roundedPanel5.CornerRadius = 20;
             roundedPanel5.ForeColor = SystemColors.AppWorkspace;
             roundedPanel5.Location = new Point(328, 42);
-            roundedPanel5.Margin = new Padding(2, 2, 2, 2);
+            roundedPanel5.Margin = new Padding(2);
             roundedPanel5.Name = "roundedPanel5";
             roundedPanel5.Size = new Size(49, 12);
             roundedPanel5.TabIndex = 11;
@@ -183,7 +183,7 @@ namespace тема_1
             roundedPanel4.CornerRadius = 20;
             roundedPanel4.ForeColor = SystemColors.AppWorkspace;
             roundedPanel4.Location = new Point(270, 42);
-            roundedPanel4.Margin = new Padding(2, 2, 2, 2);
+            roundedPanel4.Margin = new Padding(2);
             roundedPanel4.Name = "roundedPanel4";
             roundedPanel4.Size = new Size(49, 12);
             roundedPanel4.TabIndex = 10;
@@ -194,7 +194,7 @@ namespace тема_1
             roundedPanel3.CornerRadius = 20;
             roundedPanel3.ForeColor = SystemColors.AppWorkspace;
             roundedPanel3.Location = new Point(211, 42);
-            roundedPanel3.Margin = new Padding(2, 2, 2, 2);
+            roundedPanel3.Margin = new Padding(2);
             roundedPanel3.Name = "roundedPanel3";
             roundedPanel3.Size = new Size(49, 12);
             roundedPanel3.TabIndex = 9;
@@ -205,7 +205,7 @@ namespace тема_1
             roundedPanel2.CornerRadius = 20;
             roundedPanel2.ForeColor = SystemColors.AppWorkspace;
             roundedPanel2.Location = new Point(153, 42);
-            roundedPanel2.Margin = new Padding(2, 2, 2, 2);
+            roundedPanel2.Margin = new Padding(2);
             roundedPanel2.Name = "roundedPanel2";
             roundedPanel2.Size = new Size(49, 12);
             roundedPanel2.TabIndex = 8;
@@ -216,7 +216,7 @@ namespace тема_1
             roundedPanel1.CornerRadius = 20;
             roundedPanel1.ForeColor = SystemColors.AppWorkspace;
             roundedPanel1.Location = new Point(94, 42);
-            roundedPanel1.Margin = new Padding(2, 2, 2, 2);
+            roundedPanel1.Margin = new Padding(2);
             roundedPanel1.Name = "roundedPanel1";
             roundedPanel1.Size = new Size(49, 12);
             roundedPanel1.TabIndex = 7;
@@ -227,7 +227,7 @@ namespace тема_1
             roundedPanel10.CornerRadius = 20;
             roundedPanel10.ForeColor = SystemColors.AppWorkspace;
             roundedPanel10.Location = new Point(36, 42);
-            roundedPanel10.Margin = new Padding(2, 2, 2, 2);
+            roundedPanel10.Margin = new Padding(2);
             roundedPanel10.Name = "roundedPanel10";
             roundedPanel10.Size = new Size(49, 12);
             roundedPanel10.TabIndex = 6;
@@ -283,7 +283,7 @@ namespace тема_1
             button3.Name = "button3";
             button3.Size = new Size(223, 61);
             button3.TabIndex = 6;
-            button3.Text = "Перейти к тесту №2";
+            button3.Text = "Перейти к тесту №2\r\n";
             button3.UseVisualStyleBackColor = false;
             button3.Click += button3_Click;
             // 

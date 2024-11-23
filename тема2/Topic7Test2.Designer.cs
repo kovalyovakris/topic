@@ -34,7 +34,6 @@
             button3 = new Button();
             button2 = new Button();
             groupBox1 = new GroupBox();
-            radioButton3 = new RadioButton();
             radioButton2 = new RadioButton();
             radioButton1 = new RadioButton();
             label3 = new Label();
@@ -91,26 +90,13 @@
             // 
             // groupBox1
             // 
-            groupBox1.Controls.Add(radioButton3);
             groupBox1.Controls.Add(radioButton2);
             groupBox1.Controls.Add(radioButton1);
-            groupBox1.Location = new Point(157, 230);
+            groupBox1.Location = new Point(302, 230);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(785, 226);
+            groupBox1.Size = new Size(433, 172);
             groupBox1.TabIndex = 51;
             groupBox1.TabStop = false;
-            // 
-            // radioButton3
-            // 
-            radioButton3.AutoSize = true;
-            radioButton3.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            radioButton3.Location = new Point(28, 151);
-            radioButton3.Name = "radioButton3";
-            radioButton3.Size = new Size(68, 32);
-            radioButton3.TabIndex = 2;
-            radioButton3.TabStop = true;
-            radioButton3.Text = "Нет";
-            radioButton3.UseVisualStyleBackColor = true;
             // 
             // radioButton2
             // 
@@ -140,7 +126,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Times New Roman", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            label3.Location = new Point(176, 162);
+            label3.Location = new Point(197, 168);
             label3.Name = "label3";
             label3.Size = new Size(664, 25);
             label3.TabIndex = 50;
@@ -207,7 +193,6 @@
         private Button button3;
         private Button button2;
         private GroupBox groupBox1;
-        private RadioButton radioButton3;
         private RadioButton radioButton2;
         private RadioButton radioButton1;
         private Label label3;
