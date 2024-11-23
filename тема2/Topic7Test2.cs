@@ -37,6 +37,7 @@ namespace тема2
         }
         private void Button1_Click(object sender, EventArgs e)
         {
+
             label2.Text = (n + 1).ToString() + "/10";
             Button1.Hide();
             label3.Visible = true;
