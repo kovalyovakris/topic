@@ -16,7 +16,7 @@ namespace тема2
         private int n = 0;
         private int points = 0;
         private String[] questions = new string[10] {
-                
+                //"Какой из следующих языков программирования наиболее
                 "Какой из следующих языков программирования наиболее\n"+
                 "популярен для веб-разработки?",
                 "Какой метод разработки ПО предполагает итеративный\n"+
@@ -118,10 +118,16 @@ namespace тема2
         }
         private void ShowAnswer(int p)
         {
-            label2.Hide();
-            groupBox1.Hide();
-            button2.Hide();
-            if (points <= 5)
+			label2.Hide();
+			radioButton1.Hide();
+			radioButton2.Hide();
+			radioButton3.Hide();
+			for (int i = 0; i < progressPanels.Length; i++)
+			{
+				progressPanels[i].Hide();
+			}
+			button2.Hide();
+			if (points <= 5)
             {
                 label3.Text = $"Ваш результат: {points} баллов\n\n" +
 				"Начальный уровень знаний, требуется дополнительное обучение.";

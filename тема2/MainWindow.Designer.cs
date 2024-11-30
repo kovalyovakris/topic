@@ -48,132 +48,140 @@ namespace тема2
             {
                 base.OnPaint(e);
                 RectangleF Rect = new RectangleF(0, 0, this.Width, this.Height);
-                GraphicsPath GraphPath = GetRoundPath(Rect, 10);
+                GraphicsPath GraphPath = GetRoundPath(Rect, 60);
 
                 this.Region = new Region(GraphPath);
-                using (Pen pen = new Pen(Color.White, 2.95f))
+                using (Pen pen = new Pen(Color.White, 2.75f))
                 {
                     pen.Alignment = PenAlignment.Inset;
                     e.Graphics.DrawPath(pen, GraphPath);
                 }
             }
         }
-        #region Windows Form Designer generated code
+		#region Windows Form Designer generated code
 
-        /// <summary>
-        ///  Required method for Designer support - do not modify
-        ///  the contents of this method with the code editor.
-        /// </summary>
-        private void InitializeComponent()
-        {
-            buttTest1 = new RoundButton();
-            buttTest2 = new RoundButton();
-            buttTest4 = new RoundButton();
-            buttText5 = new RoundButton();
-            buttTest3 = new RoundButton();
-            buttTest7 = new RoundButton();
-            buttTest6 = new RoundButton();
-            SuspendLayout();
-            // 
-            // buttTest1
-            // 
-            buttTest1.BackColor = Color.FromArgb(165, 242, 252);
-            buttTest1.Location = new Point(259, 146);
-            buttTest1.Name = "buttTest1";
-            buttTest1.Size = new Size(562, 38);
-            buttTest1.TabIndex = 0;
-            buttTest1.Text = "Делегирование полномочий и принятие решений";
-            buttTest1.UseVisualStyleBackColor = false;
-            buttTest1.Click += button1_Click;
-            // 
-            // buttTest2
-            // 
-            buttTest2.BackColor = Color.FromArgb(165, 242, 252);
-            buttTest2.Location = new Point(259, 206);
-            buttTest2.Name = "buttTest2";
-            buttTest2.Size = new Size(562, 38);
-            buttTest2.TabIndex = 1;
-            buttTest2.Text = "Отбор персонала";
-            buttTest2.UseVisualStyleBackColor = false;
-            buttTest2.Click += roundButton1_Click;
-            // 
-            // buttTest4
-            // 
-            buttTest4.BackColor = Color.FromArgb(165, 242, 252);
-            buttTest4.Location = new Point(259, 333);
-            buttTest4.Name = "buttTest4";
-            buttTest4.Size = new Size(562, 38);
-            buttTest4.TabIndex = 2;
-            buttTest4.Text = "Мотивация персонала";
-            buttTest4.UseVisualStyleBackColor = false;
-            buttTest4.Click += buttTest4_Click;
-            // 
-            // buttText5
-            // 
-            buttText5.BackColor = Color.FromArgb(165, 242, 252);
-            buttText5.Location = new Point(259, 393);
-            buttText5.Name = "buttText5";
-            buttText5.Size = new Size(562, 38);
-            buttText5.TabIndex = 3;
-            buttText5.Text = "Системы компенсации и стимулирования персонала";
-            buttText5.UseVisualStyleBackColor = false;
-            buttText5.Click += buttText5_Click;
-            // 
-            // buttTest3
-            // 
-            buttTest3.BackColor = Color.FromArgb(165, 242, 252);
-            buttTest3.Location = new Point(259, 268);
-            buttTest3.Name = "buttTest3";
-            buttTest3.Size = new Size(562, 38);
-            buttTest3.TabIndex = 4;
-            buttTest3.Text = "Адаптация сотрудников";
-            buttTest3.UseVisualStyleBackColor = false;
-            buttTest3.Click += buttTest3_Click;
-            // 
-            // buttTest7
-            // 
-            buttTest7.BackColor = Color.FromArgb(165, 242, 252);
-            buttTest7.Location = new Point(259, 516);
-            buttTest7.Name = "buttTest7";
-            buttTest7.Size = new Size(562, 38);
-            buttTest7.TabIndex = 5;
-            buttTest7.Text = "Создание эффективной команды";
-            buttTest7.UseVisualStyleBackColor = false;
-            buttTest7.Click += buttTest7_Click;
-            // 
-            // buttTest6
-            // 
-            buttTest6.BackColor = Color.FromArgb(165, 242, 252);
-            buttTest6.Location = new Point(259, 454);
-            buttTest6.Name = "buttTest6";
-            buttTest6.Size = new Size(562, 38);
-            buttTest6.TabIndex = 6;
-            buttTest6.Text = "Управление проблемными сотрудниками";
-            buttTest6.UseVisualStyleBackColor = false;
-            buttTest6.Click += buttTest6_Click;
-            // 
-            // MainWindow
-            // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.LemonChiffon;
-            ClientSize = new Size(1067, 659);
-            Controls.Add(buttTest6);
-            Controls.Add(buttTest7);
-            Controls.Add(buttTest3);
-            Controls.Add(buttText5);
-            Controls.Add(buttTest4);
-            Controls.Add(buttTest2);
-            Controls.Add(buttTest1);
-            Name = "MainWindow";
-            StartPosition = FormStartPosition.CenterScreen;
-            Text = "MainWindow";
-            ResumeLayout(false);
-        }
+		/// <summary>
+		///  Required method for Designer support - do not modify
+		///  the contents of this method with the code editor.
+		/// </summary>
+		private void InitializeComponent()
+		{
+			buttTest1 = new RoundButton();
+			buttTest2 = new RoundButton();
+			buttTest4 = new RoundButton();
+			buttText5 = new RoundButton();
+			buttTest3 = new RoundButton();
+			buttTest7 = new RoundButton();
+			buttTest6 = new RoundButton();
+			SuspendLayout();
+			// 
+			// buttTest1
+			// 
+			buttTest1.BackColor = Color.FromArgb(165, 242, 252);
+			buttTest1.Location = new Point(421, 234);
+			buttTest1.Margin = new Padding(5, 5, 5, 5);
+			buttTest1.Name = "buttTest1";
+			buttTest1.Size = new Size(913, 61);
+			buttTest1.TabIndex = 0;
+			buttTest1.Text = "Делегирование полномочий и принятие решений";
+			buttTest1.UseVisualStyleBackColor = false;
+			buttTest1.Click += button1_Click;
+			// 
+			// buttTest2
+			// 
+			buttTest2.BackColor = Color.FromArgb(165, 242, 252);
+			buttTest2.Location = new Point(421, 330);
+			buttTest2.Margin = new Padding(5, 5, 5, 5);
+			buttTest2.Name = "buttTest2";
+			buttTest2.Size = new Size(913, 61);
+			buttTest2.TabIndex = 1;
+			buttTest2.Text = "Отбор персонала";
+			buttTest2.UseVisualStyleBackColor = false;
+			buttTest2.Click += roundButton1_Click;
+			// 
+			// buttTest4
+			// 
+			buttTest4.BackColor = Color.FromArgb(165, 242, 252);
+			buttTest4.Location = new Point(421, 533);
+			buttTest4.Margin = new Padding(5, 5, 5, 5);
+			buttTest4.Name = "buttTest4";
+			buttTest4.Size = new Size(913, 61);
+			buttTest4.TabIndex = 2;
+			buttTest4.Text = "Мотивация персонала";
+			buttTest4.UseVisualStyleBackColor = false;
+			buttTest4.Click += buttTest4_Click;
+			// 
+			// buttText5
+			// 
+			buttText5.BackColor = Color.FromArgb(165, 242, 252);
+			buttText5.Location = new Point(421, 629);
+			buttText5.Margin = new Padding(5, 5, 5, 5);
+			buttText5.Name = "buttText5";
+			buttText5.Size = new Size(913, 61);
+			buttText5.TabIndex = 3;
+			buttText5.Text = "Системы компенсации и стимулирования персонала";
+			buttText5.UseVisualStyleBackColor = false;
+			buttText5.Click += buttText5_Click;
+			// 
+			// buttTest3
+			// 
+			buttTest3.BackColor = Color.FromArgb(165, 242, 252);
+			buttTest3.Location = new Point(421, 429);
+			buttTest3.Margin = new Padding(5, 5, 5, 5);
+			buttTest3.Name = "buttTest3";
+			buttTest3.Size = new Size(913, 61);
+			buttTest3.TabIndex = 4;
+			buttTest3.Text = "Адаптация сотрудников";
+			buttTest3.UseVisualStyleBackColor = false;
+			buttTest3.Click += buttTest3_Click;
+			// 
+			// buttTest7
+			// 
+			buttTest7.BackColor = Color.FromArgb(165, 242, 252);
+			buttTest7.Location = new Point(421, 826);
+			buttTest7.Margin = new Padding(5, 5, 5, 5);
+			buttTest7.Name = "buttTest7";
+			buttTest7.Size = new Size(913, 61);
+			buttTest7.TabIndex = 5;
+			buttTest7.Text = "Создание эффективной команды";
+			buttTest7.UseVisualStyleBackColor = false;
+			buttTest7.Click += buttTest7_Click;
+			// 
+			// buttTest6
+			// 
+			buttTest6.BackColor = Color.FromArgb(165, 242, 252);
+			buttTest6.Location = new Point(421, 726);
+			buttTest6.Margin = new Padding(5, 5, 5, 5);
+			buttTest6.Name = "buttTest6";
+			buttTest6.Size = new Size(913, 61);
+			buttTest6.TabIndex = 6;
+			buttTest6.Text = "Управление проблемными сотрудниками";
+			buttTest6.UseVisualStyleBackColor = false;
+			buttTest6.Click += buttTest6_Click;
+			// 
+			// MainWindow
+			// 
+			AutoScaleDimensions = new SizeF(13F, 32F);
+			AutoScaleMode = AutoScaleMode.Font;
+			BackColor = Color.LemonChiffon;
+			ClientSize = new Size(1734, 1054);
+			Controls.Add(buttTest6);
+			Controls.Add(buttTest7);
+			Controls.Add(buttTest3);
+			Controls.Add(buttText5);
+			Controls.Add(buttTest4);
+			Controls.Add(buttTest2);
+			Controls.Add(buttTest1);
+			Margin = new Padding(5, 5, 5, 5);
+			Name = "MainWindow";
+			StartPosition = FormStartPosition.CenterScreen;
+			Text = "Меню тестов";
+			ResumeLayout(false);
+		}
 
-        #endregion
+		#endregion
 
-        private RoundButton buttTest1;
+		private RoundButton buttTest1;
         private RoundButton buttTest2;
         private RoundButton buttTest4;
         private RoundButton buttText5;

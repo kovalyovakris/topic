@@ -104,6 +104,7 @@ namespace тема2
 			// groupBox1
 			// 
 			groupBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+			groupBox1.Controls.Add(roundedPanel1);
 			groupBox1.Controls.Add(roundedPanel9);
 			groupBox1.Controls.Add(roundedPanel8);
 			groupBox1.Controls.Add(roundedPanel7);
@@ -112,7 +113,6 @@ namespace тема2
 			groupBox1.Controls.Add(roundedPanel4);
 			groupBox1.Controls.Add(roundedPanel3);
 			groupBox1.Controls.Add(roundedPanel2);
-			groupBox1.Controls.Add(roundedPanel1);
 			groupBox1.Controls.Add(roundedPanel10);
 			groupBox1.Controls.Add(radioButton3);
 			groupBox1.Controls.Add(radioButton2);

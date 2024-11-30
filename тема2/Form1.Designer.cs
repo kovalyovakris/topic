@@ -316,6 +316,7 @@ namespace тема_1
 			Margin = new Padding(5);
 			Name = "Form1";
 			StartPosition = FormStartPosition.CenterScreen;
+			Text = "тест 1.1";
 			groupBox1.ResumeLayout(false);
 			groupBox1.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
