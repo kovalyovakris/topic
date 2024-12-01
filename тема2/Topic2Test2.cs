@@ -73,7 +73,13 @@ namespace тема2
 		private void ShowAnswer(int p)
 		{
 			label2.Hide();
-			groupBox1.Hide();
+			radioButton1.Hide();
+			radioButton2.Hide();
+			for (int i = 0; i < progressPanels.Length; i++)
+			{
+				progressPanels[i].Hide();
+			}
+			button2.Hide();
 			button2.Hide();
 			if (points <= 3)
 			{

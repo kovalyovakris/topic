@@ -108,6 +108,7 @@ namespace тема_1
 		}
 		private void ShowAnswer(int p)
 		{
+			
 			label2.Hide();
 			button2.Hide();
 			radioButton1.Hide();
