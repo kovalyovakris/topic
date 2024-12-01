@@ -361,3 +361,5 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/тема2/obj/Debug/net8.0-windows/refint/тема2.dll
+/тема2/obj/Debug/net8.0-windows/apphost.exe
