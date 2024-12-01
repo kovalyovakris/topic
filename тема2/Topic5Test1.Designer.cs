@@ -81,7 +81,7 @@ namespace тема2
 			button3.Location = new Point(733, 317);
 			button3.Margin = new Padding(5);
 			button3.Name = "button3";
-			button3.Size = new Size(363, 98);
+			button3.Size = new Size(385, 98);
 			button3.TabIndex = 42;
 			button3.Text = "Перейти к тесту №2";
 			button3.UseVisualStyleBackColor = false;
@@ -96,7 +96,7 @@ namespace тема2
 			button2.Location = new Point(783, 498);
 			button2.Margin = new Padding(5);
 			button2.Name = "button2";
-			button2.Size = new Size(362, 98);
+			button2.Size = new Size(384, 98);
 			button2.TabIndex = 41;
 			button2.Text = "Вперед";
 			button2.UseVisualStyleBackColor = false;
@@ -125,7 +125,7 @@ namespace тема2
 			groupBox1.Margin = new Padding(5);
 			groupBox1.Name = "groupBox1";
 			groupBox1.Padding = new Padding(5);
-			groupBox1.Size = new Size(1186, 628);
+			groupBox1.Size = new Size(1208, 628);
 			groupBox1.TabIndex = 40;
 			groupBox1.TabStop = false;
 			// 
@@ -298,7 +298,7 @@ namespace тема2
 			button1.Location = new Point(733, 317);
 			button1.Margin = new Padding(5);
 			button1.Name = "button1";
-			button1.Size = new Size(363, 98);
+			button1.Size = new Size(385, 98);
 			button1.TabIndex = 38;
 			button1.Text = "Начать тест №1";
 			button1.UseVisualStyleBackColor = false;
@@ -320,7 +320,7 @@ namespace тема2
 			label1.AutoSize = true;
 			label1.BackColor = Color.Transparent;
 			label1.Font = new Font("Times New Roman", 16.125F);
-			label1.Location = new Point(419, 46);
+			label1.Location = new Point(318, 46);
 			label1.Margin = new Padding(5, 0, 5, 0);
 			label1.Name = "label1";
 			label1.Size = new Size(1123, 49);
@@ -331,7 +331,8 @@ namespace тема2
 			// 
 			AutoScaleDimensions = new SizeF(13F, 32F);
 			AutoScaleMode = AutoScaleMode.Font;
-			ClientSize = new Size(1734, 1054);
+			BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+			ClientSize = new Size(1756, 1054);
 			Controls.Add(pictureBox1);
 			Controls.Add(groupBox1);
 			Controls.Add(button1);
