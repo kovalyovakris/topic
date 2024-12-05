@@ -318,7 +318,7 @@ namespace тема2
 			button1.BackColor = Color.YellowGreen;
 			button1.Font = new Font("Times New Roman", 13.875F);
 			button1.ForeColor = Color.FromArgb(64, 64, 64);
-			button1.Location = new Point(764, 170);
+			button1.Location = new Point(733, 317);
 			button1.Margin = new Padding(5);
 			button1.Name = "button1";
 			button1.Size = new Size(385, 98);
@@ -333,8 +333,8 @@ namespace тема2
 			AutoScaleMode = AutoScaleMode.Font;
 			BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
 			ClientSize = new Size(1756, 1054);
-			Controls.Add(pictureBox1);
 			Controls.Add(groupBox1);
+			Controls.Add(pictureBox1);
 			Controls.Add(button1);
 			Controls.Add(label2);
 			Controls.Add(label1);
