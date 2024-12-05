@@ -349,7 +349,7 @@ namespace тема2
 			Margin = new Padding(5);
 			Name = "Topic3Test1";
 			StartPosition = FormStartPosition.CenterScreen;
-			Text = "Topic3Test1";
+			Text = "Адаптация сотрудников ";
 			((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
 			groupBox1.ResumeLayout(false);
 			groupBox1.PerformLayout();

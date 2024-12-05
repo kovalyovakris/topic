@@ -78,7 +78,7 @@ namespace тема2
 			button3.BackColor = Color.YellowGreen;
 			button3.Font = new Font("Times New Roman", 13.875F);
 			button3.ForeColor = Color.FromArgb(64, 64, 64);
-			button3.Location = new Point(733, 317);
+			button3.Location = new Point(733, 848);
 			button3.Margin = new Padding(5);
 			button3.Name = "button3";
 			button3.Size = new Size(363, 98);
