@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static тема_1.Form1;
 
 namespace тема2
 {
@@ -101,15 +102,38 @@ namespace тема2
                 "Проводить регулярные опросы сотрудников для получения их\n" +
                 "отзывов о системе вознаграждений",
         };
-        public Topic5Test2()
+		private RoundedPanel[] progressPanels;
+		public Topic5Test2()
         {
             InitializeComponent();
             label3.Hide();
             groupBox1.Hide();
             button2.Hide();
             button3.Hide();
-        }
-        private void Button1_Click(object sender, EventArgs e)
+			progressPanels = new RoundedPanel[]
+			{
+				roundedPanel10, roundedPanel1, roundedPanel2, roundedPanel3, roundedPanel4,
+				roundedPanel5, roundedPanel6, roundedPanel7, roundedPanel8,
+				roundedPanel9
+			};
+
+			UpdatePanelColors();
+		}
+		private void UpdatePanelColors()
+		{
+			for (int i = 0; i < progressPanels.Length; i++)
+			{
+				if (i < n)
+				{
+					progressPanels[i].BackColor = Color.DimGray;
+				}
+				else
+				{
+					progressPanels[i].BackColor = Color.Silver;
+				}
+			}
+		}
+		private void Button1_Click(object sender, EventArgs e)
         {
             label2.Text = (n + 1).ToString() + "/10";
             Button1.Hide();
@@ -125,9 +149,15 @@ namespace тема2
         private void ShowAnswer(int p)
         {
             label2.Hide();
-            groupBox1.Hide();
-            button2.Hide();
-            if (points <= 10)
+			radioButton1.Hide();
+			radioButton2.Hide();
+			radioButton3.Hide();
+			for (int i = 0; i < progressPanels.Length; i++)
+			{
+				progressPanels[i].Hide();
+			}
+			button2.Hide();
+			if (points <= 10)
             {
                 label3.Text = $"Ваш результат: {points} баллов\n\n" +
 				//"Продолжаете ли Вы работать после окончания рабочего дня?"
@@ -170,8 +200,10 @@ namespace тема2
                 radioButton1.Text = answer1[n];
                 radioButton2.Text = answer2[n];
                 radioButton3.Text = answer3[n];
-            }
-            if (num == 10)
+				UpdatePanelColors();
+
+			}
+			if (num == 10)
                 ShowAnswer(points);
             radioButton1.Checked = false;
             radioButton2.Checked = false;

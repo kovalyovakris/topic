@@ -73,6 +73,7 @@ namespace тема2
 			buttTest3 = new RoundButton();
 			buttTest7 = new RoundButton();
 			buttTest6 = new RoundButton();
+			label1 = new Label();
 			SuspendLayout();
 			// 
 			// buttTest1
@@ -80,10 +81,10 @@ namespace тема2
 			buttTest1.BackColor = Color.YellowGreen;
 			buttTest1.Font = new Font("Times New Roman", 16.125F);
 			buttTest1.ForeColor = Color.FromArgb(64, 64, 64);
-			buttTest1.Location = new Point(421, 234);
+			buttTest1.Location = new Point(405, 234);
 			buttTest1.Margin = new Padding(5, 5, 5, 5);
 			buttTest1.Name = "buttTest1";
-			buttTest1.Size = new Size(913, 70);
+			buttTest1.Size = new Size(950, 70);
 			buttTest1.TabIndex = 0;
 			buttTest1.Text = "Делегирование полномочий и принятие решений";
 			buttTest1.UseVisualStyleBackColor = false;
@@ -94,10 +95,10 @@ namespace тема2
 			buttTest2.BackColor = Color.YellowGreen;
 			buttTest2.Font = new Font("Times New Roman", 16.125F);
 			buttTest2.ForeColor = Color.FromArgb(64, 64, 64);
-			buttTest2.Location = new Point(421, 330);
+			buttTest2.Location = new Point(405, 330);
 			buttTest2.Margin = new Padding(5, 5, 5, 5);
 			buttTest2.Name = "buttTest2";
-			buttTest2.Size = new Size(913, 70);
+			buttTest2.Size = new Size(950, 70);
 			buttTest2.TabIndex = 1;
 			buttTest2.Text = "Отбор персонала";
 			buttTest2.UseVisualStyleBackColor = false;
@@ -108,10 +109,10 @@ namespace тема2
 			buttTest4.BackColor = Color.YellowGreen;
 			buttTest4.Font = new Font("Times New Roman", 16.125F);
 			buttTest4.ForeColor = Color.FromArgb(64, 64, 64);
-			buttTest4.Location = new Point(421, 533);
+			buttTest4.Location = new Point(405, 533);
 			buttTest4.Margin = new Padding(5, 5, 5, 5);
 			buttTest4.Name = "buttTest4";
-			buttTest4.Size = new Size(913, 70);
+			buttTest4.Size = new Size(950, 70);
 			buttTest4.TabIndex = 2;
 			buttTest4.Text = "Мотивация персонала";
 			buttTest4.UseVisualStyleBackColor = false;
@@ -122,10 +123,10 @@ namespace тема2
 			buttText5.BackColor = Color.YellowGreen;
 			buttText5.Font = new Font("Times New Roman", 16.125F);
 			buttText5.ForeColor = Color.FromArgb(64, 64, 64);
-			buttText5.Location = new Point(421, 629);
+			buttText5.Location = new Point(405, 629);
 			buttText5.Margin = new Padding(5, 5, 5, 5);
 			buttText5.Name = "buttText5";
-			buttText5.Size = new Size(913, 70);
+			buttText5.Size = new Size(950, 70);
 			buttText5.TabIndex = 3;
 			buttText5.Text = "Системы компенсации и стимулирования персонала";
 			buttText5.UseVisualStyleBackColor = false;
@@ -136,10 +137,10 @@ namespace тема2
 			buttTest3.BackColor = Color.YellowGreen;
 			buttTest3.Font = new Font("Times New Roman", 16.125F);
 			buttTest3.ForeColor = Color.FromArgb(64, 64, 64);
-			buttTest3.Location = new Point(421, 429);
+			buttTest3.Location = new Point(405, 429);
 			buttTest3.Margin = new Padding(5, 5, 5, 5);
 			buttTest3.Name = "buttTest3";
-			buttTest3.Size = new Size(913, 70);
+			buttTest3.Size = new Size(950, 70);
 			buttTest3.TabIndex = 4;
 			buttTest3.Text = "Адаптация сотрудников";
 			buttTest3.UseVisualStyleBackColor = false;
@@ -150,10 +151,10 @@ namespace тема2
 			buttTest7.BackColor = Color.YellowGreen;
 			buttTest7.Font = new Font("Times New Roman", 16.125F);
 			buttTest7.ForeColor = Color.FromArgb(64, 64, 64);
-			buttTest7.Location = new Point(421, 826);
+			buttTest7.Location = new Point(405, 826);
 			buttTest7.Margin = new Padding(5, 5, 5, 5);
 			buttTest7.Name = "buttTest7";
-			buttTest7.Size = new Size(913, 70);
+			buttTest7.Size = new Size(950, 70);
 			buttTest7.TabIndex = 5;
 			buttTest7.Text = "Создание эффективной команды";
 			buttTest7.UseVisualStyleBackColor = false;
@@ -164,14 +165,25 @@ namespace тема2
 			buttTest6.BackColor = Color.YellowGreen;
 			buttTest6.Font = new Font("Times New Roman", 16.125F);
 			buttTest6.ForeColor = Color.FromArgb(64, 64, 64);
-			buttTest6.Location = new Point(421, 726);
+			buttTest6.Location = new Point(405, 726);
 			buttTest6.Margin = new Padding(5, 5, 5, 5);
 			buttTest6.Name = "buttTest6";
-			buttTest6.Size = new Size(913, 70);
+			buttTest6.Size = new Size(950, 70);
 			buttTest6.TabIndex = 6;
 			buttTest6.Text = "Управление проблемными сотрудниками";
 			buttTest6.UseVisualStyleBackColor = false;
 			buttTest6.Click += buttTest6_Click;
+			// 
+			// label1
+			// 
+			label1.AutoSize = true;
+			label1.Font = new Font("Times New Roman", 18F, FontStyle.Regular, GraphicsUnit.Point, 204);
+			label1.ForeColor = Color.FromArgb(64, 64, 64);
+			label1.Location = new Point(272, 42);
+			label1.Name = "label1";
+			label1.Size = new Size(1216, 110);
+			label1.TabIndex = 7;
+			label1.Text = "                                            Тесты по\r\nпсихологии управления и развития человеческих ресурсов";
 			// 
 			// MainWindow
 			// 
@@ -179,6 +191,7 @@ namespace тема2
 			AutoScaleMode = AutoScaleMode.Font;
 			BackColor = Color.LemonChiffon;
 			ClientSize = new Size(1734, 1054);
+			Controls.Add(label1);
 			Controls.Add(buttTest6);
 			Controls.Add(buttTest7);
 			Controls.Add(buttTest3);
@@ -189,8 +202,9 @@ namespace тема2
 			Margin = new Padding(5, 5, 5, 5);
 			Name = "MainWindow";
 			StartPosition = FormStartPosition.CenterScreen;
-			Text = "MainWindow";
+			Text = "Меню тестов";
 			ResumeLayout(false);
+			PerformLayout();
 		}
 
 		#endregion
@@ -202,5 +216,6 @@ namespace тема2
         private RoundButton buttTest3;
         private RoundButton buttTest7;
         private RoundButton buttTest6;
-    }
+		private Label label1;
+	}
 }

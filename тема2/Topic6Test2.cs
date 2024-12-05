@@ -149,9 +149,15 @@ namespace тема2
         private void ShowAnswer(int p)
         {
             label2.Hide();
-            groupBox1.Hide();
-            button2.Hide();
-            if (points <= 10)
+			radioButton1.Hide();
+			radioButton2.Hide();
+			radioButton3.Hide();
+			for (int i = 0; i < progressPanels.Length; i++)
+			{
+				progressPanels[i].Hide();
+			}
+			button2.Hide();
+			if (points <= 10)
             {
                 label3.Text = $"Ваш результат: {points} баллов\n\n" +
                 "Вам нужно больше внимания уделить конструктивному\n"+

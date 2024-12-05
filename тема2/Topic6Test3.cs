@@ -153,9 +153,15 @@ namespace тема2
         private void ShowAnswer(int p)
         {
             label2.Hide();
-            groupBox1.Hide();
-            button2.Hide();
-            if (points <= 6)
+			radioButton1.Hide();
+			radioButton2.Hide();
+			radioButton3.Hide();
+			for (int i = 0; i < progressPanels.Length; i++)
+			{
+				progressPanels[i].Hide();
+			}
+			button2.Hide();
+			if (points <= 6)
             {
                 label3.Text = $"Ваш результат: {points} баллов\n" +
                 "Вам следует пересмотреть методы управления проблемными\n"+
