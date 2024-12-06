@@ -50,9 +50,9 @@ namespace тема2
 			roundedPanel3 = new RoundedPanel();
 			roundedPanel4 = new RoundedPanel();
 			roundedPanel2 = new RoundedPanel();
-			button1 = new RoundButton();
 			label2 = new Label();
 			label1 = new Label();
+			button1 = new RoundButton();
 			((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
 			groupBox1.SuspendLayout();
 			SuspendLayout();
@@ -78,7 +78,7 @@ namespace тема2
 			button3.BackColor = Color.YellowGreen;
 			button3.Font = new Font("Times New Roman", 13.875F);
 			button3.ForeColor = Color.FromArgb(64, 64, 64);
-			button3.Location = new Point(733, 317);
+			button3.Location = new Point(733, 848);
 			button3.Margin = new Padding(5);
 			button3.Name = "button3";
 			button3.Size = new Size(385, 98);
@@ -96,7 +96,7 @@ namespace тема2
 			button2.Location = new Point(783, 498);
 			button2.Margin = new Padding(5);
 			button2.Name = "button2";
-			button2.Size = new Size(384, 98);
+			button2.Size = new Size(362, 116);
 			button2.TabIndex = 41;
 			button2.Text = "Вперед";
 			button2.UseVisualStyleBackColor = false;
@@ -125,7 +125,7 @@ namespace тема2
 			groupBox1.Margin = new Padding(5);
 			groupBox1.Name = "groupBox1";
 			groupBox1.Padding = new Padding(5);
-			groupBox1.Size = new Size(1208, 628);
+			groupBox1.Size = new Size(1186, 646);
 			groupBox1.TabIndex = 40;
 			groupBox1.TabStop = false;
 			// 
@@ -134,7 +134,7 @@ namespace тема2
 			roundedPanel1.BackColor = Color.Silver;
 			roundedPanel1.CornerRadius = 20;
 			roundedPanel1.ForeColor = SystemColors.AppWorkspace;
-			roundedPanel1.Location = new Point(142, 67);
+			roundedPanel1.Location = new Point(153, 67);
 			roundedPanel1.Name = "roundedPanel1";
 			roundedPanel1.Size = new Size(80, 19);
 			roundedPanel1.TabIndex = 47;
@@ -144,7 +144,7 @@ namespace тема2
 			roundedPanel9.BackColor = Color.Silver;
 			roundedPanel9.CornerRadius = 20;
 			roundedPanel9.ForeColor = SystemColors.AppWorkspace;
-			roundedPanel9.Location = new Point(902, 67);
+			roundedPanel9.Location = new Point(913, 67);
 			roundedPanel9.Name = "roundedPanel9";
 			roundedPanel9.Size = new Size(80, 19);
 			roundedPanel9.TabIndex = 55;
@@ -169,7 +169,7 @@ namespace тема2
 			roundedPanel8.BackColor = Color.Silver;
 			roundedPanel8.CornerRadius = 20;
 			roundedPanel8.ForeColor = SystemColors.AppWorkspace;
-			roundedPanel8.Location = new Point(806, 67);
+			roundedPanel8.Location = new Point(817, 67);
 			roundedPanel8.Name = "roundedPanel8";
 			roundedPanel8.Size = new Size(80, 19);
 			roundedPanel8.TabIndex = 54;
@@ -194,7 +194,7 @@ namespace тема2
 			roundedPanel7.BackColor = Color.Silver;
 			roundedPanel7.CornerRadius = 20;
 			roundedPanel7.ForeColor = SystemColors.AppWorkspace;
-			roundedPanel7.Location = new Point(712, 67);
+			roundedPanel7.Location = new Point(723, 67);
 			roundedPanel7.Name = "roundedPanel7";
 			roundedPanel7.Size = new Size(80, 19);
 			roundedPanel7.TabIndex = 53;
@@ -218,7 +218,7 @@ namespace тема2
 			roundedPanel6.BackColor = Color.Silver;
 			roundedPanel6.CornerRadius = 20;
 			roundedPanel6.ForeColor = SystemColors.AppWorkspace;
-			roundedPanel6.Location = new Point(616, 67);
+			roundedPanel6.Location = new Point(627, 67);
 			roundedPanel6.Name = "roundedPanel6";
 			roundedPanel6.Size = new Size(80, 19);
 			roundedPanel6.TabIndex = 52;
@@ -244,7 +244,7 @@ namespace тема2
 			roundedPanel5.CornerRadius = 20;
 			roundedPanel5.ForeColor = SystemColors.AppWorkspace;
 			roundedPanel5.ImeMode = ImeMode.NoControl;
-			roundedPanel5.Location = new Point(522, 67);
+			roundedPanel5.Location = new Point(533, 67);
 			roundedPanel5.Name = "roundedPanel5";
 			roundedPanel5.Size = new Size(80, 19);
 			roundedPanel5.TabIndex = 51;
@@ -254,7 +254,7 @@ namespace тема2
 			roundedPanel10.BackColor = Color.Silver;
 			roundedPanel10.CornerRadius = 20;
 			roundedPanel10.ForeColor = SystemColors.AppWorkspace;
-			roundedPanel10.Location = new Point(47, 67);
+			roundedPanel10.Location = new Point(58, 67);
 			roundedPanel10.Name = "roundedPanel10";
 			roundedPanel10.Size = new Size(80, 19);
 			roundedPanel10.TabIndex = 46;
@@ -264,7 +264,7 @@ namespace тема2
 			roundedPanel3.BackColor = Color.Silver;
 			roundedPanel3.CornerRadius = 20;
 			roundedPanel3.ForeColor = SystemColors.AppWorkspace;
-			roundedPanel3.Location = new Point(332, 67);
+			roundedPanel3.Location = new Point(343, 67);
 			roundedPanel3.Name = "roundedPanel3";
 			roundedPanel3.Size = new Size(80, 19);
 			roundedPanel3.TabIndex = 49;
@@ -274,7 +274,7 @@ namespace тема2
 			roundedPanel4.BackColor = Color.Silver;
 			roundedPanel4.CornerRadius = 20;
 			roundedPanel4.ForeColor = SystemColors.AppWorkspace;
-			roundedPanel4.Location = new Point(428, 67);
+			roundedPanel4.Location = new Point(439, 67);
 			roundedPanel4.Name = "roundedPanel4";
 			roundedPanel4.Size = new Size(80, 19);
 			roundedPanel4.TabIndex = 50;
@@ -284,25 +284,10 @@ namespace тема2
 			roundedPanel2.BackColor = Color.Silver;
 			roundedPanel2.CornerRadius = 20;
 			roundedPanel2.ForeColor = SystemColors.AppWorkspace;
-			roundedPanel2.Location = new Point(238, 67);
+			roundedPanel2.Location = new Point(249, 67);
 			roundedPanel2.Name = "roundedPanel2";
 			roundedPanel2.Size = new Size(80, 19);
 			roundedPanel2.TabIndex = 48;
-			// 
-			// button1
-			// 
-			button1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-			button1.BackColor = Color.YellowGreen;
-			button1.Font = new Font("Times New Roman", 13.875F);
-			button1.ForeColor = Color.FromArgb(64, 64, 64);
-			button1.Location = new Point(733, 317);
-			button1.Margin = new Padding(5);
-			button1.Name = "button1";
-			button1.Size = new Size(385, 98);
-			button1.TabIndex = 38;
-			button1.Text = "Начать тест №1";
-			button1.UseVisualStyleBackColor = false;
-			button1.Click += button1_Click;
 			// 
 			// label2
 			// 
@@ -327,14 +312,29 @@ namespace тема2
 			label1.TabIndex = 36;
 			label1.Text = "Тест№1: cистемы компенсации и стимулирования персонала";
 			// 
+			// button1
+			// 
+			button1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+			button1.BackColor = Color.YellowGreen;
+			button1.Font = new Font("Times New Roman", 13.875F);
+			button1.ForeColor = Color.FromArgb(64, 64, 64);
+			button1.Location = new Point(733, 317);
+			button1.Margin = new Padding(5);
+			button1.Name = "button1";
+			button1.Size = new Size(385, 98);
+			button1.TabIndex = 38;
+			button1.Text = "Начать тест №1";
+			button1.UseVisualStyleBackColor = false;
+			button1.Click += button1_Click;
+			// 
 			// Topic5Test1
 			// 
 			AutoScaleDimensions = new SizeF(13F, 32F);
 			AutoScaleMode = AutoScaleMode.Font;
 			BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
 			ClientSize = new Size(1756, 1054);
-			Controls.Add(pictureBox1);
 			Controls.Add(groupBox1);
+			Controls.Add(pictureBox1);
 			Controls.Add(button1);
 			Controls.Add(label2);
 			Controls.Add(label1);
@@ -359,7 +359,6 @@ namespace тема2
         private RadioButton radioButton2;
         private RadioButton radioButton1;
         private Label label3;
-        private RoundButton button1;
         private Label label2;
         private Label label1;
 		private тема_1.Form1.RoundedPanel roundedPanel1;
@@ -372,5 +371,6 @@ namespace тема2
 		private тема_1.Form1.RoundedPanel roundedPanel3;
 		private тема_1.Form1.RoundedPanel roundedPanel4;
 		private тема_1.Form1.RoundedPanel roundedPanel2;
+		private RoundButton button1;
 	}
 }
