@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HP\\OneDrive\\Documents\\БГУИР\\пуирчр\\тесты новый\\тема2\\тема2.csproj": {}
+    "D:\\БГУИР\\пуирчр\\тесты новый\\тема2\\тема2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HP\\OneDrive\\Documents\\БГУИР\\пуирчр\\тесты новый\\тема2\\тема2.csproj": {
+    "D:\\БГУИР\\пуирчр\\тесты новый\\тема2\\тема2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HP\\OneDrive\\Documents\\БГУИР\\пуирчр\\тесты новый\\тема2\\тема2.csproj",
+        "projectUniqueName": "D:\\БГУИР\\пуирчр\\тесты новый\\тема2\\тема2.csproj",
         "projectName": "тема2",
-        "projectPath": "C:\\Users\\HP\\OneDrive\\Documents\\БГУИР\\пуирчр\\тесты новый\\тема2\\тема2.csproj",
+        "projectPath": "D:\\БГУИР\\пуирчр\\тесты новый\\тема2\\тема2.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HP\\OneDrive\\Documents\\БГУИР\\пуирчр\\тесты новый\\тема2\\obj\\",
+        "outputPath": "D:\\БГУИР\\пуирчр\\тесты новый\\тема2\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -49,6 +49,12 @@
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
+          "dependencies": {
+            "MySqlConnector": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
