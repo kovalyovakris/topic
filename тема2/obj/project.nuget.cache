@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "J8yQM8WN9R8=",
+  "dgSpecHash": "82Ur1uC3XI0=",
   "success": true,
-  "projectFilePath": "C:\\Users\\HP\\OneDrive\\Documents\\БГУИР\\пуирчр\\тесты новый\\тема2\\тема2.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "D:\\БГУИР\\пуирчр\\тесты новый\\тема2\\тема2.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\HP\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.2\\microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.2\\microsoft.extensions.logging.abstractions.8.0.2.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\mysqlconnector\\2.4.0\\mysqlconnector.2.4.0.nupkg.sha512"
+  ],
   "logs": []
 }

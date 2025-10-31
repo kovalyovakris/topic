@@ -68,11 +68,11 @@ namespace тема_1
 			// 
 			label1.AutoSize = true;
 			label1.BackColor = Color.Transparent;
-			label1.Font = new Font("Times New Roman", 12F);
-			label1.Location = new Point(474, 51);
+			label1.Font = new Font("Times New Roman", 16.125F);
+			label1.Location = new Point(338, 51);
 			label1.Margin = new Padding(5, 0, 5, 0);
 			label1.Name = "label1";
-			label1.Size = new Size(809, 36);
+			label1.Size = new Size(1084, 49);
 			label1.TabIndex = 1;
 			label1.Text = "Тест №2: делегирование полномочий и принятие решений";
 			// 
@@ -458,7 +458,7 @@ namespace тема_1
 			Margin = new Padding(5);
 			Name = "Test2";
 			StartPosition = FormStartPosition.CenterScreen;
-			Text = "Test2";
+			Text = "Делегирование полномочий и принятие решений";
 			Load += Test2_Load;
 			((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
 			groupBox1.ResumeLayout(false);
